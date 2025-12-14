@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://eyuy8tri8abh"
+path="res://.godot/imported/08 Poison Mind.mp3-3a2391c25db8008935ed5e19c3d48da4.mp3str"
+
+[deps]
+
+source_file="res://Music/08 Poison Mind.mp3"
+dest_files=["res://.godot/imported/08 Poison Mind.mp3-3a2391c25db8008935ed5e19c3d48da4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ddgtw7x3nvkry"
+path="res://.godot/imported/12 Name Entry.mp3-0d8421213b525a5843166885f0e1ff19.mp3str"
+
+[deps]
+
+source_file="res://Music/12 Name Entry.mp3"
+dest_files=["res://.godot/imported/12 Name Entry.mp3-0d8421213b525a5843166885f0e1ff19.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://jdkuu1bx0n05"]
+
+[ext_resource type="Script" path="res://fireball.gd" id="1_vhi4m"]
+[ext_resource type="Texture2D" uid="uid://t6jlwi6l87wn" path="res://Packs/Gothicvania Church/SPRITES/fx/fireball/fireball-sprites/fireball1.png" id="2_vq1yb"]
+[ext_resource type="Texture2D" uid="uid://8gved3ycnne0" path="res://Packs/Gothicvania Church/SPRITES/fx/fireball/fireball-sprites/fireball2.png" id="3_iyw1a"]
+[ext_resource type="Texture2D" uid="uid://dcihyls05ftmd" path="res://Packs/Gothicvania Church/SPRITES/fx/fireball/fireball-sprites/fireball3.png" id="4_dk0ks"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kkent"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_vq1yb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_iyw1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dk0ks")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2mygg"]
+
+[node name="Fireball" type="Area2D"]
+script = ExtResource("1_vhi4m")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_kkent")
+animation = &"fly"
+frame_progress = 0.830134
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_2mygg")

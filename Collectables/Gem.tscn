@@ -1,0 +1,65 @@
+[gd_scene load_steps=9 format=3 uid="uid://n418ep3oyblu"]
+
+[ext_resource type="Texture2D" uid="uid://dwcmwin8khkfp" path="res://gem/gem-1.png" id="1_y6gv5"]
+[ext_resource type="Texture2D" uid="uid://dbuvx7861fcsi" path="res://gem/gem-2.png" id="2_8yeg0"]
+[ext_resource type="Texture2D" uid="uid://d3n0isqic0mwm" path="res://gem/gem-3.png" id="3_mkcuv"]
+[ext_resource type="Texture2D" uid="uid://2kgxbeyth17n" path="res://gem/gem-4.png" id="4_pj1kp"]
+[ext_resource type="Texture2D" uid="uid://ccpndq6f7jhcb" path="res://gem/gem-5.png" id="5_4h02o"]
+
+[sub_resource type="GDScript" id="GDScript_i5kn5"]
+script/source = "extends Area2D
+
+func _on_body_entered(body: Node2D) -> void:
+	if body.name == \"Player\":
+		# 1. Trigger the logic in the Game singleton
+		Game.collect_gem()
+		
+		# 2. Play your tween animation (This part was perfect!)
+		var tween = get_tree().create_tween()
+		tween.tween_property(self, \"position\", position - Vector2(0, 100), 0.3)
+		tween.tween_property(self, \"modulate:a\", 0, 0.2)
+		tween.tween_callback(queue_free)
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_evwyx"]
+radius = 17.0294
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jlktq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_y6gv5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8yeg0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_mkcuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pj1kp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4h02o")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="Gem" type="Area2D"]
+script = SubResource("GDScript_i5kn5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_evwyx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 3)
+scale = Vector2(2.66667, 2.46154)
+sprite_frames = SubResource("SpriteFrames_jlktq")
+animation = &"Idle"
+autoplay = "Idle"
+frame = 2
+frame_progress = 0.666415
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

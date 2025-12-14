@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://crgd1865y46a8"
+path="res://.godot/imported/09 Player Miss.mp3-dee6725261e689eb198a3657d88e32f5.mp3str"
+
+[deps]
+
+source_file="res://Music/09 Player Miss.mp3"
+dest_files=["res://.godot/imported/09 Player Miss.mp3-dee6725261e689eb198a3657d88e32f5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,67 @@
+[gd_scene load_steps=12 format=3 uid="uid://b7osapci3rpm7"]
+
+[ext_resource type="Script" path="res://completion.gd" id="1_xjuyc"]
+[ext_resource type="PackedScene" uid="uid://dy2qat3wccq0b" path="res://BG.tscn" id="2_fct0g"]
+[ext_resource type="Texture2D" uid="uid://bpgkg2d13moed" path="res://CompletionAssets/CompletionUIBG-removebg-preview.png" id="3_a8s6l"]
+[ext_resource type="Texture2D" uid="uid://hhrfovol7f0m" path="res://CompletionAssets/CompletionUIButtons-removebg-preview.png" id="4_ff1n7"]
+[ext_resource type="AudioStream" uid="uid://4jvsrw0flxby" path="res://Music/11 Stage Clear.mp3" id="5_m76gt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uuqyy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sdca6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v3npf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wvvwe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ih5jh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jwlc1"]
+
+[node name="Completion" type="Node2D"]
+script = ExtResource("1_xjuyc")
+
+[node name="BG" parent="." instance=ExtResource("2_fct0g")]
+
+[node name="CompletionUibg-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(581.5, 323)
+scale = Vector2(1.60339, 1.6987)
+texture = ExtResource("3_a8s6l")
+
+[node name="Restart" type="Button" parent="."]
+offset_left = 401.0
+offset_top = 415.0
+offset_right = 755.0
+offset_bottom = 497.0
+theme_override_styles/hover = SubResource("StyleBoxEmpty_uuqyy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_sdca6")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_v3npf")
+
+[node name="Sprite2D" type="Sprite2D" parent="Restart"]
+position = Vector2(175, 39)
+texture = ExtResource("4_ff1n7")
+region_enabled = true
+region_rect = Rect2(149.727, 72.4546, 349.091, 81.0454)
+
+[node name="MainMenu" type="Button" parent="."]
+offset_left = 399.0
+offset_top = 539.0
+offset_right = 754.0
+offset_bottom = 612.0
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wvvwe")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ih5jh")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_jwlc1")
+
+[node name="Sprite2D" type="Sprite2D" parent="MainMenu"]
+position = Vector2(179, 34)
+texture = ExtResource("4_ff1n7")
+region_enabled = true
+region_rect = Rect2(148.546, 226.136, 351.818, 79.0909)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_m76gt")
+volume_db = -5.0
+autoplay = true
+
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="MainMenu" to="." method="_on_main_menu_pressed"]

@@ -1,0 +1,152 @@
+[gd_scene load_steps=27 format=3 uid="uid://cvuuv17xnvnte"]
+
+[ext_resource type="Script" path="res://skeleton.gd" id="1_k53jm"]
+[ext_resource type="Texture2D" uid="uid://b7brav5sn51mq" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/skeleton/Sprites/walk-clothed/skeleton-clothed-1.png" id="2_mgyhg"]
+[ext_resource type="Texture2D" uid="uid://ruhli3ypqlc1" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/skeleton/Sprites/walk-clothed/skeleton-clothed-2.png" id="3_655s4"]
+[ext_resource type="Texture2D" uid="uid://36aqctu2pkhs" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/skeleton/Sprites/walk-clothed/skeleton-clothed-3.png" id="4_xjjat"]
+[ext_resource type="Texture2D" uid="uid://dy846ji4c61it" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/skeleton/Sprites/walk-clothed/skeleton-clothed-4.png" id="5_exh23"]
+[ext_resource type="Texture2D" uid="uid://b44ufjtafef04" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/skeleton/Sprites/walk-clothed/skeleton-clothed-5.png" id="6_u6vsn"]
+[ext_resource type="Texture2D" uid="uid://cruwylkfa5pmk" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/skeleton/Sprites/walk-clothed/skeleton-clothed-6.png" id="7_5u2e6"]
+[ext_resource type="Texture2D" uid="uid://egy4vockxc3t" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/skeleton/Sprites/walk-clothed/skeleton-clothed-7.png" id="8_ld6cs"]
+[ext_resource type="Texture2D" uid="uid://ceu1sjdnymee4" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/skeleton/Sprites/walk-clothed/skeleton-clothed-8.png" id="9_hd2k3"]
+[ext_resource type="Texture2D" uid="uid://ce7k43wlagwh2" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/EnemyDeath/Sprites/enemy-death-1.png" id="10_jxb5u"]
+[ext_resource type="Texture2D" uid="uid://jl0lhsdx6s3u" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/skeleton/skeleton-rise-clothed/skeleton-rise-clothed-1.png" id="10_yavgh"]
+[ext_resource type="Texture2D" uid="uid://bxcs851ma7pr1" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/skeleton/skeleton-rise-clothed/skeleton-rise-clothed-2.png" id="11_3xr5t"]
+[ext_resource type="Texture2D" uid="uid://dnsv4ep8gn66b" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/EnemyDeath/Sprites/enemy-death-2.png" id="11_p2sxx"]
+[ext_resource type="Texture2D" uid="uid://ctw45k4kbrjk6" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/EnemyDeath/Sprites/enemy-death-3.png" id="12_5xb7d"]
+[ext_resource type="Texture2D" uid="uid://j21npkhins3a" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/skeleton/skeleton-rise-clothed/skeleton-rise-clothed-3.png" id="12_66o8b"]
+[ext_resource type="Texture2D" uid="uid://dpg5w2nhprvqk" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/skeleton/skeleton-rise-clothed/skeleton-rise-clothed-4.png" id="13_ak3yj"]
+[ext_resource type="Texture2D" uid="uid://b7vue5tgd5j3n" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/EnemyDeath/Sprites/enemy-death-4.png" id="13_ubd32"]
+[ext_resource type="Texture2D" uid="uid://dkmfwqjft81hc" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/skeleton/skeleton-rise-clothed/skeleton-rise-clothed-5.png" id="14_dorb6"]
+[ext_resource type="Texture2D" uid="uid://bybpgac7dcw8i" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/EnemyDeath/Sprites/enemy-death-5.png" id="14_xxemu"]
+[ext_resource type="Texture2D" uid="uid://dtmqjbq2jvxy2" path="res://Packs/Gothicvania Cemetery/Characters/Enemies/skeleton/skeleton-rise-clothed/skeleton-rise-clothed-6.png" id="15_55jog"]
+[ext_resource type="AudioStream" uid="uid://bemvcufaelx6a" path="res://Packs/Gothicvania Cemetery/Phaser Demo/assets/sounds/enemy-death.wav" id="21_3h4mj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v0aka"]
+size = Vector2(39, 42)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gtlfu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_mgyhg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_655s4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xjjat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_exh23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_u6vsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5u2e6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ld6cs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_hd2k3")
+}],
+"loop": true,
+"name": &"Chase",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_jxb5u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_p2sxx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_5xb7d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ubd32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_xxemu")
+}],
+"loop": false,
+"name": &"Death",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_yavgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_3xr5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_66o8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ak3yj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_dorb6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_55jog")
+}],
+"loop": true,
+"name": &"Rise",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_deo7s"]
+radius = 204.05
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6nr7i"]
+size = Vector2(13, 57)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4bf8q"]
+size = Vector2(40.5, 41)
+
+[node name="Skeleton" type="CharacterBody2D"]
+script = ExtResource("1_k53jm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4.5, 6)
+shape = SubResource("RectangleShape2D_v0aka")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(5, -10.5)
+scale = Vector2(1.22727, 1.40385)
+sprite_frames = SubResource("SpriteFrames_gtlfu")
+animation = &"Chase"
+
+[node name="PlayerDetection" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]
+position = Vector2(0, 7.5)
+shape = SubResource("CircleShape2D_deo7s")
+
+[node name="PlayerDeath" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDeath"]
+position = Vector2(-0.5, -2.5)
+shape = SubResource("RectangleShape2D_6nr7i")
+
+[node name="PlayerCollision" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCollision"]
+position = Vector2(4.75, 6.5)
+shape = SubResource("RectangleShape2D_4bf8q")
+
+[node name="DeathSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21_3h4mj")
+volume_db = -5.0
+
+[connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="PlayerDetection" to="." method="_on_player_detection_body_exited"]
+[connection signal="body_entered" from="PlayerDeath" to="." method="_on_player_death_body_entered"]
+[connection signal="body_entered" from="PlayerCollision" to="." method="_on_player_collision_body_entered"]

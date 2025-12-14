@@ -1,0 +1,69 @@
+[gd_scene load_steps=12 format=3 uid="uid://d11khvsxb6os2"]
+
+[ext_resource type="Script" path="res://game_over.gd" id="1_wtpiw"]
+[ext_resource type="PackedScene" uid="uid://dy2qat3wccq0b" path="res://BG.tscn" id="1_wypoj"]
+[ext_resource type="Texture2D" uid="uid://u72cnqw33wjs" path="res://GameOverAssets/GameOverTitle.png" id="2_fqj8g"]
+[ext_resource type="Texture2D" uid="uid://couc8slalbqf6" path="res://GameOverAssets/buttons.png" id="3_hhqp1"]
+[ext_resource type="AudioStream" uid="uid://bjn3xwfjee2ny" path="res://Music/10 Game Over.mp3" id="5_dhdn4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n4gka"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_00sjg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tgrro"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gb17f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uusg4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3ls06"]
+
+[node name="GameOver" type="Node2D"]
+script = ExtResource("1_wtpiw")
+
+[node name="BG" parent="." instance=ExtResource("1_wypoj")]
+
+[node name="GameOverTitle" type="Sprite2D" parent="."]
+position = Vector2(570, 186.5)
+scale = Vector2(1.29012, 1.16343)
+texture = ExtResource("2_fqj8g")
+
+[node name="try_again" type="Button" parent="."]
+offset_left = 418.0
+offset_top = 372.0
+offset_right = 736.0
+offset_bottom = 450.0
+theme_override_styles/hover = SubResource("StyleBoxEmpty_n4gka")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_00sjg")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_tgrro")
+
+[node name="Sprite2D" type="Sprite2D" parent="try_again"]
+position = Vector2(159, 40)
+scale = Vector2(1.26613, 1.42593)
+texture = ExtResource("3_hhqp1")
+region_enabled = true
+region_rect = Rect2(56.0909, 23.3039, 248.909, 54.6962)
+
+[node name="main_menu" type="Button" parent="."]
+offset_left = 424.0
+offset_top = 492.0
+offset_right = 735.0
+offset_bottom = 574.0
+theme_override_styles/hover = SubResource("StyleBoxEmpty_gb17f")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_uusg4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3ls06")
+
+[node name="Sprite2D" type="Sprite2D" parent="main_menu"]
+position = Vector2(154.25, 39)
+scale = Vector2(1.27551, 1.41071)
+texture = ExtResource("3_hhqp1")
+region_enabled = true
+region_rect = Rect2(344.909, 22.075, 245, 56.4474)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_dhdn4")
+volume_db = -5.0
+autoplay = true
+
+[connection signal="pressed" from="try_again" to="." method="_on_try_again_pressed"]
+[connection signal="pressed" from="main_menu" to="." method="_on_main_menu_pressed"]

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dctxvh2npvg0m"
+path="res://.godot/imported/hit.wav-040a0f67c8e093e57f7bb973b3031815.sample"
+
+[deps]
+
+source_file="res://Packs/Gothicvania Church/Stomper Asset Files/fx/hit.wav"
+dest_files=["res://.godot/imported/hit.wav-040a0f67c8e093e57f7bb973b3031815.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

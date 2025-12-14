@@ -1,0 +1,146 @@
+[gd_scene load_steps=29 format=3 uid="uid://denro33bcvmhx"]
+
+[ext_resource type="Script" path="res://wizard.gd" id="1_7nhil"]
+[ext_resource type="Texture2D" uid="uid://ba31an1pnx2dh" path="res://Packs/Gothicvania Church/SPRITES/fx/enemy-death/enemy-death-sprites/enemy-death1.png" id="1_nkj2g"]
+[ext_resource type="Texture2D" uid="uid://bpgeceudubds4" path="res://Packs/Gothicvania Church/SPRITES/fx/enemy-death/enemy-death-sprites/enemy-death2.png" id="2_rg3f0"]
+[ext_resource type="Texture2D" uid="uid://pi2iaoyiggqn" path="res://Packs/Gothicvania Church/SPRITES/fx/enemy-death/enemy-death-sprites/enemy-death3.png" id="3_ics4q"]
+[ext_resource type="Texture2D" uid="uid://f8y6l4r14o54" path="res://Packs/Gothicvania Church/SPRITES/fx/enemy-death/enemy-death-sprites/enemy-death4.png" id="4_h07tj"]
+[ext_resource type="Texture2D" uid="uid://13etw4ma78yy" path="res://Packs/Gothicvania Church/SPRITES/fx/enemy-death/enemy-death-sprites/enemy-death5.png" id="5_xaol5"]
+[ext_resource type="Texture2D" uid="uid://bhk2h60hucfi8" path="res://Packs/Gothicvania Church/SPRITES/fx/enemy-death/enemy-death-sprites/enemy-death6.png" id="6_st0lx"]
+[ext_resource type="Texture2D" uid="uid://dcweht31n3cfw" path="res://Packs/Gothicvania Church/SPRITES/fx/enemy-death/enemy-death-sprites/enemy-death7.png" id="7_5hf1q"]
+[ext_resource type="Texture2D" uid="uid://7dg8xxjq4pbe" path="res://Packs/Gothicvania Church/SPRITES/fx/enemy-death/enemy-death-sprites/enemy-death8.png" id="8_ikfb4"]
+[ext_resource type="Texture2D" uid="uid://be26pbfcttmeu" path="res://Packs/Gothicvania Church/SPRITES/fx/enemy-death/enemy-death-sprites/enemy-death9.png" id="9_ew4yv"]
+[ext_resource type="Texture2D" uid="uid://dvr5xuvn3hkb2" path="res://Packs/Gothicvania Church/SPRITES/wizard/fire-sprites/fire1.png" id="10_s6ku3"]
+[ext_resource type="Texture2D" uid="uid://go03spshoqc" path="res://Packs/Gothicvania Church/SPRITES/wizard/fire-sprites/fire2.png" id="11_aud31"]
+[ext_resource type="Texture2D" uid="uid://bclum578w8onm" path="res://Packs/Gothicvania Church/SPRITES/wizard/fire-sprites/fire3.png" id="12_j1on5"]
+[ext_resource type="Texture2D" uid="uid://b5sx5fvmak1hw" path="res://Packs/Gothicvania Church/SPRITES/wizard/fire-sprites/fire4.png" id="13_u7jxe"]
+[ext_resource type="Texture2D" uid="uid://bgxig1fc8pmem" path="res://Packs/Gothicvania Church/SPRITES/wizard/fire-sprites/fire5.png" id="14_kcpds"]
+[ext_resource type="Texture2D" uid="uid://cmd2q1srqkvdm" path="res://Packs/Gothicvania Church/SPRITES/wizard/fire-sprites/fire6.png" id="15_s3gpc"]
+[ext_resource type="Texture2D" uid="uid://cin33aq6o23yw" path="res://Packs/Gothicvania Church/SPRITES/wizard/fire-sprites/fire7.png" id="16_pmdhi"]
+[ext_resource type="Texture2D" uid="uid://b2nurjl4u8u3l" path="res://Packs/Gothicvania Church/SPRITES/wizard/fire-sprites/fire8.png" id="17_2e3eb"]
+[ext_resource type="Texture2D" uid="uid://c5320gd6wjvm6" path="res://Packs/Gothicvania Church/SPRITES/wizard/fire-sprites/fire9.png" id="18_eyll2"]
+[ext_resource type="Texture2D" uid="uid://dxr7n1pdwqwo" path="res://Packs/Gothicvania Church/SPRITES/wizard/fire-sprites/fire10.png" id="19_wei4h"]
+[ext_resource type="Texture2D" uid="uid://bshoty66p65w6" path="res://Packs/Gothicvania Church/SPRITES/wizard/idle-sprites/wizard-idle-1.png" id="20_7wvjp"]
+[ext_resource type="Texture2D" uid="uid://cjehyrhe8sm4u" path="res://Packs/Gothicvania Church/SPRITES/wizard/idle-sprites/wizard-idle-2.png" id="21_y4ujj"]
+[ext_resource type="Texture2D" uid="uid://bwvggak65jeu5" path="res://Packs/Gothicvania Church/SPRITES/wizard/idle-sprites/wizard-idle-3.png" id="22_7bh3s"]
+[ext_resource type="Texture2D" uid="uid://1jo73mbipqxw" path="res://Packs/Gothicvania Church/SPRITES/wizard/idle-sprites/wizard-idle-4.png" id="23_hmff2"]
+[ext_resource type="Texture2D" uid="uid://crfooitpwfcjf" path="res://Packs/Gothicvania Church/SPRITES/wizard/idle-sprites/wizard-idle-5.png" id="24_2antq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dmdjn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nkj2g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_rg3f0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ics4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_h07tj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xaol5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_st0lx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5hf1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ikfb4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ew4yv")
+}],
+"loop": true,
+"name": &"Death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_s6ku3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_aud31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_j1on5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_u7jxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_kcpds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_s3gpc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_pmdhi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_2e3eb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_eyll2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_wei4h")
+}],
+"loop": true,
+"name": &"Fire",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_7wvjp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_y4ujj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_7bh3s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_hmff2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_2antq")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f54y8"]
+size = Vector2(32, 44)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vbreu"]
+radius = 1687.23
+
+[node name="Wizard" type="CharacterBody2D"]
+script = ExtResource("1_7nhil")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_dmdjn")
+animation = &"Fire"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(4, 12)
+shape = SubResource("RectangleShape2D_f54y8")
+
+[node name="PlayerDetection" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]
+shape = SubResource("CircleShape2D_vbreu")
+
+[node name="FireballSpawn" type="Marker2D" parent="."]
+
+[connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="PlayerDetection" to="." method="_on_player_detection_body_exited"]

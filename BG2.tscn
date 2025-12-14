@@ -1,0 +1,108 @@
+[gd_scene load_steps=6 format=3 uid="uid://gg8q3u5dspqe"]
+
+[ext_resource type="Script" path="res://bg2.gd" id="1_wb3kp"]
+[ext_resource type="Texture2D" uid="uid://d2yhp6r3uxaq2" path="res://Environment/night-town-background-files/layers/night-town-background-sky.png" id="2_pvpd8"]
+[ext_resource type="Texture2D" uid="uid://pvluntap7xkx" path="res://Environment/night-town-background-files/layers/night-town-background-clouds.png" id="3_3pkry"]
+[ext_resource type="Texture2D" uid="uid://c60qmadrk4v75" path="res://Environment/night-town-background-files/layers/night-town-background-mountains.png" id="4_vvloi"]
+[ext_resource type="Texture2D" uid="uid://cou61uabfxocj" path="res://Environment/night-town-background-files/layers/night-town-background-forest.png" id="5_ljjmv"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+script = ExtResource("1_wb3kp")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1120, 0)
+
+[node name="Night-town-background-sky" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(573, 323.5)
+scale = Vector2(11.9792, 2.86161)
+texture = ExtResource("2_pvpd8")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1140, 0)
+
+[node name="Night-town-background-clouds" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(211, 206)
+texture = ExtResource("3_3pkry")
+
+[node name="Night-town-background-clouds7" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(961, 281)
+scale = Vector2(1.375, 1)
+texture = ExtResource("3_3pkry")
+
+[node name="Night-town-background-clouds8" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(908, 229)
+scale = Vector2(1.50694, 1.0625)
+texture = ExtResource("3_3pkry")
+
+[node name="Night-town-background-clouds2" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(475, 214)
+scale = Vector2(1.29861, 1)
+texture = ExtResource("3_3pkry")
+
+[node name="Night-town-background-clouds3" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(748, 193)
+scale = Vector2(1.20833, 1)
+texture = ExtResource("3_3pkry")
+
+[node name="Night-town-background-clouds4" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(205, 266)
+scale = Vector2(1.20833, 1)
+texture = ExtResource("3_3pkry")
+
+[node name="Night-town-background-clouds5" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(392, 242)
+scale = Vector2(1.20833, 1)
+texture = ExtResource("3_3pkry")
+
+[node name="Night-town-background-clouds6" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(516, 275)
+scale = Vector2(1.20833, 1)
+texture = ExtResource("3_3pkry")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1150, 0)
+
+[node name="Night-town-background-mountains" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(382, 360.5)
+scale = Vector2(3.25, 2.52232)
+texture = ExtResource("4_vvloi")
+
+[node name="Night-town-background-mountains3" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(692, 364)
+scale = Vector2(3.25, 2.52232)
+texture = ExtResource("4_vvloi")
+
+[node name="Night-town-background-mountains4" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(994, 367)
+scale = Vector2(3.25, 2.52232)
+texture = ExtResource("4_vvloi")
+
+[node name="Night-town-background-mountains2" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(158, 359)
+scale = Vector2(3.25, 2.52232)
+texture = ExtResource("4_vvloi")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1150, 0)
+
+[node name="Night-town-background-forest" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(145, 484.5)
+scale = Vector2(4.54688, 3.36458)
+texture = ExtResource("5_ljjmv")
+
+[node name="Night-town-background-forest2" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(434, 483)
+scale = Vector2(4.54688, 3.36458)
+texture = ExtResource("5_ljjmv")
+
+[node name="Night-town-background-forest3" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(725, 483)
+scale = Vector2(4.54688, 3.36458)
+texture = ExtResource("5_ljjmv")
+
+[node name="Night-town-background-forest4" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(1010, 483)
+scale = Vector2(4.54688, 3.36458)
+texture = ExtResource("5_ljjmv")

@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqih43f0ipobf"]
+
+[ext_resource type="Script" path="res://level_title.gd" id="1_rijp3"]
+
+[sub_resource type="SystemFont" id="SystemFont_74w8t"]
+subpixel_positioning = 0
+
+[node name="LevelTitle" type="CanvasLayer"]
+script = ExtResource("1_rijp3")
+
+[node name="TitleLabel" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -89.0
+offset_top = 40.0
+offset_right = 81.0
+offset_bottom = 109.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("SystemFont_74w8t")
+theme_override_font_sizes/font_size = 50
+text = "Level X"

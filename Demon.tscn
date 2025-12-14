@@ -1,0 +1,146 @@
+[gd_scene load_steps=21 format=3 uid="uid://k5y73dhgtty1"]
+
+[ext_resource type="Script" path="res://demon.gd" id="1_tj0qd"]
+[ext_resource type="Texture2D" uid="uid://43kecbjuuq6c" path="res://Demon-Files/demon-Files/Spritesheets/demon-attack-no-breath.png" id="2_bkmkd"]
+[ext_resource type="Texture2D" uid="uid://bbl05cfni0750" path="res://Demon-Files/demon-Files/Spritesheets/demon-idle.png" id="3_51npx"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ka3oq"]
+radius = 55.0
+height = 110.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rmoki"]
+atlas = ExtResource("2_bkmkd")
+region = Rect2(0, 0, 192, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qh05"]
+atlas = ExtResource("2_bkmkd")
+region = Rect2(192, 0, 192, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0rjlh"]
+atlas = ExtResource("2_bkmkd")
+region = Rect2(384, 0, 192, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kepw1"]
+atlas = ExtResource("2_bkmkd")
+region = Rect2(576, 0, 192, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fnpi7"]
+atlas = ExtResource("2_bkmkd")
+region = Rect2(768, 0, 192, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_epg03"]
+atlas = ExtResource("2_bkmkd")
+region = Rect2(960, 0, 192, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pm6ix"]
+atlas = ExtResource("2_bkmkd")
+region = Rect2(1152, 0, 192, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d5yfc"]
+atlas = ExtResource("2_bkmkd")
+region = Rect2(1344, 0, 192, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_invre"]
+atlas = ExtResource("3_51npx")
+region = Rect2(0, 0, 160, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j6nrk"]
+atlas = ExtResource("3_51npx")
+region = Rect2(160, 0, 160, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p2mv1"]
+atlas = ExtResource("3_51npx")
+region = Rect2(320, 0, 160, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eq3r4"]
+atlas = ExtResource("3_51npx")
+region = Rect2(480, 0, 160, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_osfle"]
+atlas = ExtResource("3_51npx")
+region = Rect2(640, 0, 160, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gov74"]
+atlas = ExtResource("3_51npx")
+region = Rect2(800, 0, 160, 144)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p3ekr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rmoki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qh05")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0rjlh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kepw1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fnpi7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_epg03")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pm6ix")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d5yfc")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_invre")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j6nrk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p2mv1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eq3r4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_osfle")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gov74")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k04py"]
+radius = 304.902
+
+[node name="DemonBoss" type="CharacterBody2D"]
+script = ExtResource("1_tj0qd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 41)
+shape = SubResource("CapsuleShape2D_ka3oq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_p3ekr")
+animation = &"attack"
+frame = 7
+frame_progress = 1.0
+
+[node name="DetectionZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionZone"]
+shape = SubResource("CircleShape2D_k04py")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]
+[connection signal="body_entered" from="DetectionZone" to="." method="_on_detection_zone_body_entered"]
+[connection signal="body_exited" from="DetectionZone" to="." method="_on_detection_zone_body_exited"]

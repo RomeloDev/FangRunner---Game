@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=3 uid="uid://btqckuc7bxvok"]
+
+[ext_resource type="Script" path="res://bg_3.gd" id="1_i1rb6"]
+[ext_resource type="Texture2D" uid="uid://ttd6671a8o02" path="res://Packs/Gothicvania Cemetery/Environment/background.png" id="1_l15vd"]
+[ext_resource type="Texture2D" uid="uid://cc2d7j3sckba0" path="res://Packs/Gothicvania Cemetery/Environment/mountains.png" id="3_025cm"]
+[ext_resource type="Texture2D" uid="uid://bfoih47x0ff4l" path="res://Packs/Gothicvania Cemetery/Environment/graveyard.png" id="4_cuykf"]
+
+[node name="BG3" type="ParallaxBackground"]
+script = ExtResource("1_i1rb6")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0, 1)
+
+[node name="Background" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(574.5, 325.5)
+scale = Vector2(2.98698, 2.90625)
+texture = ExtResource("1_l15vd")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.2, 1)
+motion_mirroring = Vector2(1170, 0)
+
+[node name="Mountains" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(143, 392.5)
+scale = Vector2(1.41667, 1.44693)
+texture = ExtResource("3_025cm")
+
+[node name="Mountains2" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(411, 382)
+scale = Vector2(1.41667, 1.44693)
+texture = ExtResource("3_025cm")
+
+[node name="Mountains3" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(651, 391)
+scale = Vector2(1.41667, 1.44693)
+texture = ExtResource("3_025cm")
+
+[node name="Mountains4" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(919, 376)
+scale = Vector2(1.41667, 1.44693)
+texture = ExtResource("3_025cm")
+
+[node name="Mountains5" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(1061, 386)
+scale = Vector2(1.47917, 1.44693)
+texture = ExtResource("3_025cm")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1180, 0)
+
+[node name="Graveyard" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(305, 473.625)
+scale = Vector2(1.57292, 2.85569)
+texture = ExtResource("4_cuykf")
+
+[node name="Graveyard2" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(900, 476)
+scale = Vector2(1.57292, 2.85569)
+texture = ExtResource("4_cuykf")

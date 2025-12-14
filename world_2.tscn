@@ -1,0 +1,1487 @@
+[gd_scene load_steps=29 format=3 uid="uid://bjqrnkfhosgd2"]
+
+[ext_resource type="PackedScene" uid="uid://gg8q3u5dspqe" path="res://BG2.tscn" id="1_chnog"]
+[ext_resource type="Texture2D" uid="uid://btsglvng23vei" path="res://Environment/Gothic-Horror-Files/PNG/layers/tiles.png" id="1_h4sxx"]
+[ext_resource type="Texture2D" uid="uid://b1ydevsxp4fbh" path="res://Environment/night-town-background-files/layers/night-town-background-town.png" id="2_315j7"]
+[ext_resource type="Texture2D" uid="uid://dpx2sc7ylyacr" path="res://Packs/Gothicvania Cemetery/Environment/tileset.png" id="2_ecy0y"]
+[ext_resource type="Texture2D" uid="uid://t0mgwlb2447w" path="res://Packs/Gothicvania Church/ENVIRONMENT/tileset.png" id="3_7ked8"]
+[ext_resource type="Texture2D" uid="uid://bnjybaor08sk" path="res://Environment/night-town-background-files/layers/night-town-background-far-buildings.png" id="3_s3vyv"]
+[ext_resource type="Texture2D" uid="uid://dh768gehfx2dj" path="res://Gothicvania Swamp files/Evironment/tileset.png" id="4_jvxv3"]
+[ext_resource type="PackedScene" uid="uid://crvssxdc0atvx" path="res://Player/Player.tscn" id="6_x7bs1"]
+[ext_resource type="PackedScene" uid="uid://cvuuv17xnvnte" path="res://Skeleton.tscn" id="7_gjyum"]
+[ext_resource type="Texture2D" uid="uid://bf8cdngexhijc" path="res://Environment/HauntedForest/Layers/Props/pillars.png" id="7_kaxry"]
+[ext_resource type="PackedScene" uid="uid://denro33bcvmhx" path="res://Wizard.tscn" id="10_ck5k4"]
+[ext_resource type="Texture2D" uid="uid://l28fb1ua7c3o" path="res://Packs/Gothicvania Cemetery/Environment/sliced-objects/statue.png" id="11_chpbx"]
+[ext_resource type="Texture2D" uid="uid://ss2c3ccslqce" path="res://Packs/Gothicvania Cemetery/Environment/sliced-objects/stone-3.png" id="11_rvhuj"]
+[ext_resource type="PackedScene" uid="uid://dqih43f0ipobf" path="res://LevelTitle.tscn" id="11_w3wh2"]
+[ext_resource type="PackedScene" uid="uid://bgnewd38am5u3" path="res://Portal/Portal.tscn" id="13_wrd5c"]
+[ext_resource type="PackedScene" uid="uid://c8vnibi6ybyag" path="res://PausedUI.tscn" id="14_eiw7x"]
+[ext_resource type="PackedScene" uid="uid://n418ep3oyblu" path="res://Collectables/Gem.tscn" id="16_2qlpe"]
+[ext_resource type="AudioStream" uid="uid://d2oa53aw38ipk" path="res://Music/13 Nothing to Lose.mp3" id="17_1ykg5"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_isj6o"]
+texture = ExtResource("1_h4sxx")
+0:0/0 = 0
+26:0/0 = 0
+30:0/0 = 0
+30:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+31:0/0 = 0
+31:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+32:0/0 = 0
+32:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+33:0/0 = 0
+33:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+34:0/0 = 0
+34:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+35:0/0 = 0
+35:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+36:0/0 = 0
+36:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+37:0/0 = 0
+37:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+38:0/0 = 0
+38:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+39:0/0 = 0
+39:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+40:0/0 = 0
+40:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+41:0/0 = 0
+41:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+42:0/0 = 0
+42:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+43:0/0 = 0
+43:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+44:0/0 = 0
+44:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+45:0/0 = 0
+45:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+46:0/0 = 0
+46:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+9:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+30:1/0 = 0
+30:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+31:1/0 = 0
+32:1/0 = 0
+33:1/0 = 0
+34:1/0 = 0
+35:1/0 = 0
+35:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+36:1/0 = 0
+36:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+37:1/0 = 0
+37:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+38:1/0 = 0
+38:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+39:1/0 = 0
+39:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+40:1/0 = 0
+41:1/0 = 0
+42:1/0 = 0
+43:1/0 = 0
+44:1/0 = 0
+45:1/0 = 0
+45:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+46:1/0 = 0
+46:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+52:1/0 = 0
+52:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+53:1/0 = 0
+53:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, 0.125, 8, -8, 8, 8, -8, 8)
+54:1/0 = 0
+54:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+55:1/0 = 0
+55:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+56:1/0 = 0
+0:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+26:2/0 = 0
+28:2/0 = 0
+29:2/0 = 0
+29:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+30:2/0 = 0
+30:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+31:2/0 = 0
+32:2/0 = 0
+33:2/0 = 0
+34:2/0 = 0
+35:2/0 = 0
+36:2/0 = 0
+37:2/0 = 0
+38:2/0 = 0
+39:2/0 = 0
+40:2/0 = 0
+40:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+41:2/0 = 0
+41:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+42:2/0 = 0
+42:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+43:2/0 = 0
+44:2/0 = 0
+45:2/0 = 0
+45:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+46:2/0 = 0
+46:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+47:2/0 = 0
+47:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+48:2/0 = 0
+52:2/0 = 0
+52:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+53:2/0 = 0
+53:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+54:2/0 = 0
+54:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+55:2/0 = 0
+55:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+56:2/0 = 0
+56:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+57:2/0 = 0
+57:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+58:2/0 = 0
+58:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+59:2/0 = 0
+60:2/0 = 0
+0:3/0 = 0
+28:3/0 = 0
+29:3/0 = 0
+29:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+30:3/0 = 0
+31:3/0 = 0
+32:3/0 = 0
+33:3/0 = 0
+34:3/0 = 0
+35:3/0 = 0
+36:3/0 = 0
+37:3/0 = 0
+38:3/0 = 0
+39:3/0 = 0
+40:3/0 = 0
+41:3/0 = 0
+42:3/0 = 0
+42:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+43:3/0 = 0
+43:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+44:3/0 = 0
+44:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+45:3/0 = 0
+45:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+46:3/0 = 0
+46:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+47:3/0 = 0
+47:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+48:3/0 = 0
+51:3/0 = 0
+51:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+52:3/0 = 0
+52:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+53:3/0 = 0
+53:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+54:3/0 = 0
+54:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+55:3/0 = 0
+55:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+56:3/0 = 0
+57:3/0 = 0
+58:3/0 = 0
+58:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+59:3/0 = 0
+59:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+60:3/0 = 0
+61:3/0 = 0
+0:4/0 = 0
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:4/0 = 0
+12:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+21:4/0 = 0
+21:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+22:4/0 = 0
+22:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+26:4/0 = 0
+29:4/0 = 0
+29:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+30:4/0 = 0
+30:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+31:4/0 = 0
+32:4/0 = 0
+33:4/0 = 0
+34:4/0 = 0
+35:4/0 = 0
+36:4/0 = 0
+37:4/0 = 0
+38:4/0 = 0
+39:4/0 = 0
+40:4/0 = 0
+41:4/0 = 0
+42:4/0 = 0
+43:4/0 = 0
+43:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+44:4/0 = 0
+44:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+45:4/0 = 0
+45:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+46:4/0 = 0
+46:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+47:4/0 = 0
+51:4/0 = 0
+51:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+52:4/0 = 0
+52:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+53:4/0 = 0
+53:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+54:4/0 = 0
+54:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+55:4/0 = 0
+56:4/0 = 0
+57:4/0 = 0
+57:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+58:4/0 = 0
+58:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+59:4/0 = 0
+60:4/0 = 0
+61:4/0 = 0
+62:4/0 = 0
+63:4/0 = 0
+0:5/0 = 0
+2:5/0 = 0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:5/0 = 0
+4:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:5/0 = 0
+18:5/0 = 0
+21:5/0 = 0
+21:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+22:5/0 = 0
+22:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+30:5/0 = 0
+30:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+31:5/0 = 0
+32:5/0 = 0
+33:5/0 = 0
+34:5/0 = 0
+35:5/0 = 0
+36:5/0 = 0
+37:5/0 = 0
+38:5/0 = 0
+39:5/0 = 0
+40:5/0 = 0
+41:5/0 = 0
+42:5/0 = 0
+43:5/0 = 0
+44:5/0 = 0
+45:5/0 = 0
+45:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+46:5/0 = 0
+46:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+51:5/0 = 0
+51:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+52:5/0 = 0
+52:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+53:5/0 = 0
+53:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+54:5/0 = 0
+54:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+55:5/0 = 0
+56:5/0 = 0
+56:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+57:5/0 = 0
+57:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+58:5/0 = 0
+59:5/0 = 0
+60:5/0 = 0
+61:5/0 = 0
+62:5/0 = 0
+63:5/0 = 0
+64:5/0 = 0
+0:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+24:6/0 = 0
+25:6/0 = 0
+26:6/0 = 0
+30:6/0 = 0
+30:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+31:6/0 = 0
+32:6/0 = 0
+33:6/0 = 0
+34:6/0 = 0
+35:6/0 = 0
+36:6/0 = 0
+37:6/0 = 0
+38:6/0 = 0
+39:6/0 = 0
+40:6/0 = 0
+41:6/0 = 0
+42:6/0 = 0
+43:6/0 = 0
+44:6/0 = 0
+45:6/0 = 0
+45:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+46:6/0 = 0
+46:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+50:6/0 = 0
+50:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+51:6/0 = 0
+51:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+52:6/0 = 0
+53:6/0 = 0
+53:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+54:6/0 = 0
+54:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+55:6/0 = 0
+55:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+56:6/0 = 0
+56:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+57:6/0 = 0
+58:6/0 = 0
+59:6/0 = 0
+60:6/0 = 0
+61:6/0 = 0
+62:6/0 = 0
+63:6/0 = 0
+64:6/0 = 0
+0:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+14:7/0 = 0
+15:7/0 = 0
+17:7/0 = 0
+18:7/0 = 0
+21:7/0 = 0
+21:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+22:7/0 = 0
+22:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+30:7/0 = 0
+30:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+31:7/0 = 0
+32:7/0 = 0
+33:7/0 = 0
+34:7/0 = 0
+34:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+35:7/0 = 0
+36:7/0 = 0
+37:7/0 = 0
+38:7/0 = 0
+39:7/0 = 0
+40:7/0 = 0
+41:7/0 = 0
+42:7/0 = 0
+43:7/0 = 0
+44:7/0 = 0
+45:7/0 = 0
+45:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+46:7/0 = 0
+46:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+50:7/0 = 0
+50:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, 0.125, 8, -8, 8, 8, -8, 8)
+51:7/0 = 0
+51:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+52:7/0 = 0
+52:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+53:7/0 = 0
+53:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+54:7/0 = 0
+54:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+55:7/0 = 0
+55:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+56:7/0 = 0
+57:7/0 = 0
+58:7/0 = 0
+59:7/0 = 0
+60:7/0 = 0
+61:7/0 = 0
+62:7/0 = 0
+63:7/0 = 0
+64:7/0 = 0
+0:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+21:8/0 = 0
+21:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+22:8/0 = 0
+22:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+24:8/0 = 0
+24:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+25:8/0 = 0
+25:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+26:8/0 = 0
+26:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+30:8/0 = 0
+30:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+31:8/0 = 0
+32:8/0 = 0
+33:8/0 = 0
+34:8/0 = 0
+35:8/0 = 0
+36:8/0 = 0
+37:8/0 = 0
+38:8/0 = 0
+39:8/0 = 0
+40:8/0 = 0
+41:8/0 = 0
+42:8/0 = 0
+43:8/0 = 0
+44:8/0 = 0
+45:8/0 = 0
+45:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+46:8/0 = 0
+46:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+49:8/0 = 0
+49:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+50:8/0 = 0
+50:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+51:8/0 = 0
+51:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+52:8/0 = 0
+52:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+53:8/0 = 0
+53:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+54:8/0 = 0
+54:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+55:8/0 = 0
+56:8/0 = 0
+57:8/0 = 0
+58:8/0 = 0
+59:8/0 = 0
+60:8/0 = 0
+61:8/0 = 0
+62:8/0 = 0
+63:8/0 = 0
+64:8/0 = 0
+0:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+21:9/0 = 0
+21:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+22:9/0 = 0
+22:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+24:9/0 = 0
+24:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+25:9/0 = 0
+25:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+26:9/0 = 0
+26:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+30:9/0 = 0
+30:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+31:9/0 = 0
+32:9/0 = 0
+33:9/0 = 0
+34:9/0 = 0
+35:9/0 = 0
+36:9/0 = 0
+37:9/0 = 0
+38:9/0 = 0
+39:9/0 = 0
+40:9/0 = 0
+41:9/0 = 0
+42:9/0 = 0
+43:9/0 = 0
+44:9/0 = 0
+45:9/0 = 0
+45:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+46:9/0 = 0
+46:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+49:9/0 = 0
+49:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+50:9/0 = 0
+50:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+51:9/0 = 0
+51:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+52:9/0 = 0
+52:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+53:9/0 = 0
+53:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+54:9/0 = 0
+54:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+55:9/0 = 0
+55:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+56:9/0 = 0
+56:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+57:9/0 = 0
+57:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+58:9/0 = 0
+58:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+59:9/0 = 0
+59:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+60:9/0 = 0
+60:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+61:9/0 = 0
+62:9/0 = 0
+63:9/0 = 0
+0:10/0 = 0
+30:10/0 = 0
+30:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+31:10/0 = 0
+31:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+32:10/0 = 0
+32:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+33:10/0 = 0
+33:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+34:10/0 = 0
+34:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+35:10/0 = 0
+35:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+36:10/0 = 0
+36:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+37:10/0 = 0
+37:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+38:10/0 = 0
+38:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+39:10/0 = 0
+39:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+40:10/0 = 0
+40:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+41:10/0 = 0
+41:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+42:10/0 = 0
+42:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+43:10/0 = 0
+43:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+44:10/0 = 0
+44:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+45:10/0 = 0
+45:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+46:10/0 = 0
+46:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+49:10/0 = 0
+49:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+50:10/0 = 0
+50:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+51:10/0 = 0
+51:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+52:10/0 = 0
+52:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+53:10/0 = 0
+53:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+54:10/0 = 0
+54:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+55:10/0 = 0
+55:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+56:10/0 = 0
+56:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+57:10/0 = 0
+57:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+58:10/0 = 0
+58:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+59:10/0 = 0
+59:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+60:10/0 = 0
+60:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+61:10/0 = 0
+61:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+62:10/0 = 0
+62:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+63:10/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_spelb"]
+texture = ExtResource("2_315j7")
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+16:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+20:0/0 = 0
+21:0/0 = 0
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+16:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+20:1/0 = 0
+21:1/0 = 0
+25:1/0 = 0
+26:1/0 = 0
+27:1/0 = 0
+28:1/0 = 0
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:2/0 = 0
+9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+16:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+20:2/0 = 0
+21:2/0 = 0
+22:2/0 = 0
+23:2/0 = 0
+24:2/0 = 0
+25:2/0 = 0
+26:2/0 = 0
+27:2/0 = 0
+28:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:3/0 = 0
+6:3/0 = 0
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:3/0 = 0
+7:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:3/0 = 0
+8:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:3/0 = 0
+9:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+16:3/0 = 0
+17:3/0 = 0
+18:3/0 = 0
+19:3/0 = 0
+20:3/0 = 0
+21:3/0 = 0
+22:3/0 = 0
+23:3/0 = 0
+24:3/0 = 0
+25:3/0 = 0
+26:3/0 = 0
+27:3/0 = 0
+28:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:4/0 = 0
+6:4/0 = 0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:4/0 = 0
+7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:4/0 = 0
+8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:4/0 = 0
+9:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+16:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+22:4/0 = 0
+23:4/0 = 0
+24:4/0 = 0
+25:4/0 = 0
+26:4/0 = 0
+27:4/0 = 0
+28:4/0 = 0
+6:5/0 = 0
+6:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:5/0 = 0
+7:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:5/0 = 0
+8:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:5/0 = 0
+9:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+16:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+22:5/0 = 0
+23:5/0 = 0
+24:5/0 = 0
+25:5/0 = 0
+26:5/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l6pwh"]
+texture = ExtResource("3_s3vyv")
+1:0/0 = 0
+18:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+1:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+1:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+18:3/0 = 0
+19:3/0 = 0
+1:4/0 = 0
+3:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hgrpu"]
+texture = ExtResource("2_ecy0y")
+21:1/0 = 0
+22:1/0 = 0
+19:2/0 = 0
+20:2/0 = 0
+21:2/0 = 0
+22:2/0 = 0
+23:2/0 = 0
+24:2/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+14:3/0 = 0
+14:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:3/0 = 0
+15:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:3/0 = 0
+20:3/0 = 0
+21:3/0 = 0
+22:3/0 = 0
+23:3/0 = 0
+24:3/0 = 0
+1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:4/0 = 0
+5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:4/0 = 0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:4/0 = 0
+7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:4/0 = 0
+9:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+14:4/0 = 0
+14:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:4/0 = 0
+15:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+16:4/0 = 0
+17:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+22:4/0 = 0
+1:5/0 = 0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:5/0 = 0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:5/0 = 0
+4:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:5/0 = 0
+5:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:5/0 = 0
+6:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:5/0 = 0
+7:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:5/0 = 0
+9:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+14:5/0 = 0
+14:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:5/0 = 0
+15:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+16:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+22:5/0 = 0
+23:5/0 = 0
+24:5/0 = 0
+1:6/0 = 0
+1:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:6/0 = 0
+2:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:6/0 = 0
+12:6/0 = 0
+14:6/0 = 0
+14:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:6/0 = 0
+15:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:6/0 = 0
+19:6/0 = 0
+20:6/0 = 0
+21:6/0 = 0
+22:6/0 = 0
+23:6/0 = 0
+24:6/0 = 0
+14:7/0 = 0
+14:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:7/0 = 0
+15:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:7/0 = 0
+19:7/0 = 0
+20:7/0 = 0
+21:7/0 = 0
+22:7/0 = 0
+23:7/0 = 0
+24:7/0 = 0
+25:7/0 = 0
+14:8/0 = 0
+14:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+21:8/0 = 0
+22:8/0 = 0
+23:8/0 = 0
+24:8/0 = 0
+25:8/0 = 0
+26:8/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_42bji"]
+texture = ExtResource("3_7ked8")
+8:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+1:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+6:2/0 = 0
+10:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+15:2/0 = 0
+16:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+1:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+6:3/0 = 0
+10:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+15:3/0 = 0
+16:3/0 = 0
+18:3/0 = 0
+19:3/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+15:4/0 = 0
+16:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+1:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+16:5/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+12:6/0 = 0
+16:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+14:7/0 = 0
+15:7/0 = 0
+16:7/0 = 0
+18:7/0 = 0
+19:7/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+16:8/0 = 0
+0:10/0 = 0
+0:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:10/0 = 0
+1:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:10/0 = 0
+2:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:10/0 = 0
+4:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:10/0 = 0
+5:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:10/0 = 0
+6:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:10/0 = 0
+9:10/0 = 0
+10:10/0 = 0
+12:10/0 = 0
+13:10/0 = 0
+15:10/0 = 0
+16:10/0 = 0
+0:11/0 = 0
+0:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:11/0 = 0
+1:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:11/0 = 0
+2:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:11/0 = 0
+4:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:11/0 = 0
+5:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:11/0 = 0
+6:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:11/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+12:11/0 = 0
+13:11/0 = 0
+15:11/0 = 0
+16:11/0 = 0
+0:12/0 = 0
+0:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:12/0 = 0
+1:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:12/0 = 0
+2:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:12/0 = 0
+4:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:12/0 = 0
+5:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:12/0 = 0
+6:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_joubn"]
+texture = ExtResource("4_jvxv3")
+0:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+16:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+20:0/0 = 0
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:1/0 = 0
+10:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:1/0 = 0
+11:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:1/0 = 0
+12:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:1/0 = 0
+14:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:1/0 = 0
+15:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+16:1/0 = 0
+16:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:1/0 = 0
+17:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:1/0 = 0
+18:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:1/0 = 0
+20:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:2/0 = 0
+9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:2/0 = 0
+10:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:2/0 = 0
+11:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:2/0 = 0
+12:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:2/0 = 0
+14:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:2/0 = 0
+15:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+16:2/0 = 0
+16:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:2/0 = 0
+17:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:2/0 = 0
+18:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:2/0 = 0
+20:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:3/0 = 0
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:3/0 = 0
+8:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:3/0 = 0
+9:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:3/0 = 0
+10:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:3/0 = 0
+11:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:3/0 = 0
+12:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:3/0 = 0
+14:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:3/0 = 0
+15:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+16:3/0 = 0
+16:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:3/0 = 0
+17:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:3/0 = 0
+18:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+20:3/0 = 0
+20:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+11:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:5/0 = 0
+12:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:5/0 = 0
+14:5/0 = 0
+14:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:5/0 = 0
+15:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+16:5/0 = 0
+16:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:5/0 = 0
+17:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:6/0 = 0
+2:6/0 = 0
+2:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:6/0 = 0
+3:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:6/0 = 0
+6:6/0 = 0
+6:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:6/0 = 0
+7:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:6/0 = 0
+8:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:6/0 = 0
+11:6/0 = 0
+11:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:6/0 = 0
+12:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+14:6/0 = 0
+14:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+15:6/0 = 0
+15:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+16:6/0 = 0
+16:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+17:6/0 = 0
+17:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bqlit"]
+texture = ExtResource("7_kaxry")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_5yg6f"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_isj6o")
+sources/3 = SubResource("TileSetAtlasSource_hgrpu")
+sources/4 = SubResource("TileSetAtlasSource_42bji")
+sources/6 = SubResource("TileSetAtlasSource_joubn")
+sources/1 = SubResource("TileSetAtlasSource_spelb")
+sources/2 = SubResource("TileSetAtlasSource_l6pwh")
+sources/9 = SubResource("TileSetAtlasSource_bqlit")
+
+[sub_resource type="GDScript" id="GDScript_8fb83"]
+script/source = "extends Label
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	text = \"HP: \" + str(Game.playerHP)
+"
+
+[sub_resource type="GDScript" id="GDScript_qcbn2"]
+script/source = "extends Label
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	text = \"Gem: \" + str(Game.Gem)
+"
+
+[node name="World2" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_5yg6f")
+format = 2
+layer_0/tile_data = PackedInt32Array(1900544, 917507, 4, 1966080, 917507, 5, 1900545, 983043, 4, 1966081, 983043, 5, 1114112, 917507, 4, 1179648, 917507, 5, 1114113, 983043, 4, 1179649, 983043, 5, 1245184, 917507, 4, 1310720, 917507, 5, 1245185, 983043, 4, 1310721, 983043, 5, 1376256, 917507, 4, 1441792, 917507, 5, 1376257, 983043, 4, 1441793, 983043, 5, 1507328, 917507, 4, 1572864, 917507, 5, 1507329, 983043, 4, 1572865, 983043, 5, 1638400, 917507, 4, 1703936, 917507, 5, 1638401, 983043, 4, 1703937, 983043, 5, 1769472, 917507, 4, 1835008, 917507, 5, 1769473, 983043, 4, 1835009, 983043, 5, 1048576, 917507, 3, 1048577, 983043, 3, 1704113, 917510, 5, 1769649, 1048582, 6, 1704114, 983046, 5, 1769650, 1114118, 6, 1704115, 1048582, 5, 1769651, 917510, 6, 1704116, 1114118, 5, 1769652, 983046, 6, 1704117, 917510, 5, 1769653, 1048582, 6, 1704118, 983046, 5, 1769654, 1114118, 6, 1704119, 1048582, 5, 1769655, 917510, 6, 1704120, 1114118, 5, 1769656, 983046, 6, 1704121, 917510, 5, 1769657, 1048582, 6, 1704122, 983046, 5, 1769658, 1114118, 6, 1704123, 1048582, 5, 1769659, 917510, 6, 1704124, 1114118, 5, 1769660, 983046, 6, 1704125, 917510, 5, 1769661, 1048582, 6, 1704126, 983046, 5, 1769662, 1114118, 6, 1704127, 1048582, 5, 1769663, 917510, 6, 1704128, 1114118, 5, 1769664, 983046, 6, 1704129, 917510, 5, 1769665, 1048582, 6, 1704130, 983046, 5, 1769666, 1114118, 6, 1704131, 1048582, 5, 1769667, 917510, 6, 1704132, 1114118, 5, 1769668, 983046, 6, 1704133, 917510, 5, 1769669, 1048582, 6, 1704134, 983046, 5, 1769670, 1114118, 6, 1704135, 1048582, 5, 1769671, 917510, 6, 1704136, 1114118, 5, 1769672, 983046, 6, 1704137, 917510, 5, 1769673, 1048582, 6, 1704138, 983046, 5, 1769674, 1114118, 6, 1704139, 1048582, 5, 1769675, 917510, 6, 1704140, 1114118, 5, 1769676, 983046, 6, 1704141, 917510, 5, 1769677, 1048582, 6, 1704111, 917510, 5, 1769647, 917510, 6, 1704112, 983046, 5, 1769648, 983046, 6, 1835183, 917510, 6, 1835184, 983046, 6, 1835185, 1048582, 6, 1835186, 1114118, 6, 1900719, 917510, 6, 1900720, 983046, 6, 1900721, 1048582, 6, 1900722, 1114118, 6, 1966255, 917510, 6, 1966256, 983046, 6, 1966257, 1048582, 6, 1966258, 1114118, 6, 2031791, 917510, 6, 2031792, 983046, 6, 2031793, 1048582, 6, 2031794, 1114118, 6, 2097327, 917510, 6, 2097328, 983046, 6, 2097329, 1048582, 6, 2097330, 1114118, 6, 2162863, 917510, 6, 2162864, 983046, 6, 2162865, 1048582, 6, 2162866, 1114118, 6, 2228399, 917510, 6, 2228400, 983046, 6, 2228401, 1048582, 6, 2228402, 1114118, 6, 2293935, 917510, 6, 2293936, 983046, 6, 2293937, 1048582, 6, 2293938, 1114118, 6, 1835187, 917510, 6, 1835188, 983046, 6, 1835189, 1048582, 6, 1835190, 1114118, 6, 1900723, 917510, 6, 1900724, 983046, 6, 1900725, 1048582, 6, 1900726, 1114118, 6, 1966259, 917510, 6, 1966260, 983046, 6, 1966261, 1048582, 6, 1966262, 1114118, 6, 2031795, 917510, 6, 2031796, 983046, 6, 2031797, 1048582, 6, 2031798, 1114118, 6, 2097331, 917510, 6, 2097332, 983046, 6, 2097333, 1048582, 6, 2097334, 1114118, 6, 2162867, 917510, 6, 2162868, 983046, 6, 2162869, 1048582, 6, 2162870, 1114118, 6, 2228403, 917510, 6, 2228404, 983046, 6, 2228405, 1048582, 6, 2228406, 1114118, 6, 2293939, 917510, 6, 2293940, 983046, 6, 2293941, 1048582, 6, 2293942, 1114118, 6, 1835191, 917510, 6, 1835192, 983046, 6, 1835193, 1048582, 6, 1835194, 1114118, 6, 1900727, 917510, 6, 1900728, 983046, 6, 1900729, 1048582, 6, 1900730, 1114118, 6, 1966263, 917510, 6, 1966264, 983046, 6, 1966265, 1048582, 6, 1966266, 1114118, 6, 2031799, 917510, 6, 2031800, 983046, 6, 2031801, 1048582, 6, 2031802, 1114118, 6, 2097335, 917510, 6, 2097336, 983046, 6, 2097337, 1048582, 6, 2097338, 1114118, 6, 2162871, 917510, 6, 2162872, 983046, 6, 2162873, 1048582, 6, 2162874, 1114118, 6, 2228407, 917510, 6, 2228408, 983046, 6, 2228409, 1048582, 6, 2228410, 1114118, 6, 2293943, 917510, 6, 2293944, 983046, 6, 2293945, 1048582, 6, 2293946, 1114118, 6, 1835195, 917510, 6, 1835196, 983046, 6, 1835197, 1048582, 6, 1835198, 1114118, 6, 1900731, 917510, 6, 1900732, 983046, 6, 1900733, 1048582, 6, 1900734, 1114118, 6, 1966267, 917510, 6, 1966268, 983046, 6, 1966269, 1048582, 6, 1966270, 1114118, 6, 2031803, 917510, 6, 2031804, 983046, 6, 2031805, 1048582, 6, 2031806, 1114118, 6, 2097339, 917510, 6, 2097340, 983046, 6, 2097341, 1048582, 6, 2097342, 1114118, 6, 2162875, 917510, 6, 2162876, 983046, 6, 2162877, 1048582, 6, 2162878, 1114118, 6, 2228411, 917510, 6, 2228412, 983046, 6, 2228413, 1048582, 6, 2228414, 1114118, 6, 2293947, 917510, 6, 2293948, 983046, 6, 2293949, 1048582, 6, 2293950, 1114118, 6, 1835199, 917510, 6, 1835200, 983046, 6, 1835201, 1048582, 6, 1835202, 1114118, 6, 1900735, 917510, 6, 1900736, 983046, 6, 1900737, 1048582, 6, 1900738, 1114118, 6, 1966271, 917510, 6, 1966272, 983046, 6, 1966273, 1048582, 6, 1966274, 1114118, 6, 2031807, 917510, 6, 2031808, 983046, 6, 2031809, 1048582, 6, 2031810, 1114118, 6, 2097343, 917510, 6, 2097344, 983046, 6, 2097345, 1048582, 6, 2097346, 1114118, 6, 2162879, 917510, 6, 2162880, 983046, 6, 2162881, 1048582, 6, 2162882, 1114118, 6, 2228415, 917510, 6, 2228416, 983046, 6, 2228417, 1048582, 6, 2228418, 1114118, 6, 2293951, 917510, 6, 2293952, 983046, 6, 2293953, 1048582, 6, 2293954, 1114118, 6, 1835203, 917510, 6, 1835204, 983046, 6, 1835205, 1048582, 6, 1835206, 1114118, 6, 1900739, 917510, 6, 1900740, 983046, 6, 1900741, 1048582, 6, 1900742, 1114118, 6, 1966275, 917510, 6, 1966276, 983046, 6, 1966277, 1048582, 6, 1966278, 1114118, 6, 2031811, 917510, 6, 2031812, 983046, 6, 2031813, 1048582, 6, 2031814, 1114118, 6, 2097347, 917510, 6, 2097348, 983046, 6, 2097349, 1048582, 6, 2097350, 1114118, 6, 2162883, 917510, 6, 2162884, 983046, 6, 2162885, 1048582, 6, 2162886, 1114118, 6, 2228419, 917510, 6, 2228420, 983046, 6, 2228421, 1048582, 6, 2228422, 1114118, 6, 2293955, 917510, 6, 2293956, 983046, 6, 2293957, 1048582, 6, 2293958, 1114118, 6, 1835207, 917510, 6, 1835208, 983046, 6, 1835209, 1048582, 6, 1835210, 1114118, 6, 1900743, 917510, 6, 1900744, 983046, 6, 1900745, 1048582, 6, 1900746, 1114118, 6, 1966279, 917510, 6, 1966280, 983046, 6, 1966281, 1048582, 6, 1966282, 1114118, 6, 2031815, 917510, 6, 2031816, 983046, 6, 2031817, 1048582, 6, 2031818, 1114118, 6, 2097351, 917510, 6, 2097352, 983046, 6, 2097353, 1048582, 6, 2097354, 1114118, 6, 2162887, 917510, 6, 2162888, 983046, 6, 2162889, 1048582, 6, 2162890, 1114118, 6, 2228423, 917510, 6, 2228424, 983046, 6, 2228425, 1048582, 6, 2228426, 1114118, 6, 2293959, 917510, 6, 2293960, 983046, 6, 2293961, 1048582, 6, 2293962, 1114118, 6, 1835211, 917510, 6, 1835212, 983046, 6, 1835213, 1048582, 6, 1900747, 917510, 6, 1900748, 983046, 6, 1900749, 1048582, 6, 1966283, 917510, 6, 1966284, 983046, 6, 1966285, 1048582, 6, 2031819, 917510, 6, 2031820, 983046, 6, 2031821, 1048582, 6, 2097355, 917510, 6, 2097356, 983046, 6, 2097357, 1048582, 6, 2162891, 917510, 6, 2162892, 983046, 6, 2162893, 1048582, 6, 2228427, 917510, 6, 2228428, 983046, 6, 2228429, 1048582, 6, 2293963, 917510, 6, 2293964, 983046, 6, 2293965, 1048582, 6, 1704142, 917510, 5, 1704143, 983046, 5, 1704144, 1048582, 5, 1704145, 1114118, 5, 1769678, 917510, 6, 1769679, 983046, 6, 1769680, 1048582, 6, 1769681, 1114118, 6, 1835214, 917510, 6, 1835215, 983046, 6, 1835216, 1048582, 6, 1835217, 1114118, 6, 1900750, 917510, 6, 1900751, 983046, 6, 1900752, 1048582, 6, 1900753, 1114118, 6, 1966286, 917510, 6, 1966287, 983046, 6, 1966288, 1048582, 6, 1966289, 1114118, 6, 2031822, 917510, 6, 2031823, 983046, 6, 2031824, 1048582, 6, 2031825, 1114118, 6, 2097358, 917510, 6, 2097359, 983046, 6, 2097360, 1048582, 6, 2097361, 1114118, 6, 2162894, 917510, 6, 2162895, 983046, 6, 2162896, 1048582, 6, 2162897, 1114118, 6, 2228430, 917510, 6, 2228431, 983046, 6, 2228432, 1048582, 6, 2228433, 1114118, 6, 2293966, 917510, 6, 2293967, 983046, 6, 2293968, 1048582, 6, 2293969, 1114118, 6, 1966297, 917510, 5, 1966298, 983046, 5, 2031833, 917510, 6, 2031834, 983046, 6, 2097369, 917510, 6, 2097370, 983046, 6, 2162905, 917510, 6, 2162906, 983046, 6, 2228441, 917510, 6, 2228442, 983046, 6, 1966299, 917510, 5, 2031835, 917510, 6, 1966300, 983046, 5, 2031836, 983046, 6, 1966301, 1048582, 5, 2031837, 1048582, 6, 1966302, 1114118, 5, 2031838, 1114118, 6, 1966303, 917510, 5, 2031839, 917510, 6, 1966304, 983046, 5, 2031840, 983046, 6, 1966305, 1048582, 5, 2031841, 1048582, 6, 1966306, 1114118, 5, 2031842, 1114118, 6, 1966307, 917510, 5, 2031843, 917510, 6, 1966308, 983046, 5, 2031844, 983046, 6, 1966309, 1048582, 5, 2031845, 1048582, 6, 1966310, 1114118, 5, 2031846, 1114118, 6, 1966311, 917510, 5, 2031847, 917510, 6, 1966312, 983046, 5, 2031848, 983046, 6, 1966313, 917510, 5, 2031849, 917510, 6, 1966314, 983046, 5, 2031850, 983046, 6, 1966315, 1048582, 5, 2031851, 1048582, 6, 1966316, 1114118, 5, 2031852, 1114118, 6, 1966317, 917510, 5, 2031853, 917510, 6, 1966318, 983046, 5, 2031854, 983046, 6, 1966319, 1048582, 5, 2031855, 1048582, 6, 1966320, 1114118, 5, 2031856, 1114118, 6, 1966321, 917510, 5, 2031857, 917510, 6, 1966322, 983046, 5, 2031858, 983046, 6, 1966323, 1048582, 5, 2031859, 1048582, 6, 1966324, 1114118, 5, 2031860, 1114118, 6, 1966325, 917510, 5, 2031861, 917510, 6, 1966326, 983046, 5, 2031862, 983046, 6, 1966327, 1048582, 5, 2031863, 1048582, 6, 1966328, 1114118, 5, 2031864, 1114118, 6, 1966329, 917510, 5, 2031865, 917510, 6, 1966330, 983046, 5, 2031866, 983046, 6, 1966331, 917510, 5, 2031867, 917510, 6, 1966332, 983046, 5, 2031868, 983046, 6, 1966333, 1048582, 5, 2031869, 1048582, 6, 1966334, 1114118, 5, 2031870, 1114118, 6, 1966335, 917510, 5, 2031871, 917510, 6, 1966336, 917510, 5, 2031872, 917510, 6, 2097415, 917510, 6, 2162951, 917510, 6, 2097416, 983046, 6, 2162952, 983046, 6, 2097417, 1048582, 6, 2162953, 1048582, 6, 2097418, 1114118, 6, 2162954, 1114118, 6, 2097419, 917510, 6, 2162955, 917510, 6, 1704210, 917510, 5, 1769746, 917510, 6, 1704211, 983046, 5, 1769747, 983046, 6, 1704212, 1048582, 5, 1769748, 1048582, 6, 1704213, 1114118, 5, 1769749, 1114118, 6, 1704214, 917510, 5, 1769750, 917510, 6, 2359471, 917510, 6, 2359472, 983046, 6, 2359473, 1048582, 6, 2359474, 1114118, 6, 2359475, 917510, 6, 2359476, 983046, 6, 2359477, 1048582, 6, 2359478, 1114118, 6, 2359479, 917510, 6, 2359480, 983046, 6, 2359481, 1048582, 6, 2359482, 1114118, 6, 2359483, 917510, 6, 2359484, 983046, 6, 2359485, 1048582, 6, 2359486, 1114118, 6, 2359487, 917510, 6, 2359488, 983046, 6, 2359489, 1048582, 6, 2359490, 1114118, 6, 2359491, 917510, 6, 2359492, 983046, 6, 2359493, 1048582, 6, 2359494, 1114118, 6, 2359495, 917510, 6, 2359496, 983046, 6, 2359497, 1048582, 6, 2359498, 1114118, 6, 2359499, 917510, 6, 2359500, 983046, 6, 2359501, 1048582, 6, 2359502, 1114118, 6, 2359503, 917510, 6, 2359504, 983046, 6, 2359505, 1048582, 6, 2097371, 917510, 6, 2097372, 983046, 6, 2097373, 1048582, 6, 2097374, 1114118, 6, 2162907, 917510, 6, 2162908, 983046, 6, 2162909, 1048582, 6, 2162910, 1114118, 6, 2228443, 917510, 6, 2228444, 983046, 6, 2228445, 1048582, 6, 2228446, 1114118, 6, 2097375, 917510, 6, 2097376, 983046, 6, 2097377, 1048582, 6, 2097378, 1114118, 6, 2162911, 917510, 6, 2162912, 983046, 6, 2162913, 1048582, 6, 2162914, 1114118, 6, 2228447, 917510, 6, 2228448, 983046, 6, 2228449, 1048582, 6, 2228450, 1114118, 6, 2097379, 917510, 6, 2097380, 983046, 6, 2097381, 1048582, 6, 2097382, 1114118, 6, 2162915, 917510, 6, 2162916, 983046, 6, 2162917, 1048582, 6, 2162918, 1114118, 6, 2228451, 917510, 6, 2228452, 983046, 6, 2228453, 1048582, 6, 2228454, 1114118, 6, 2097383, 917510, 6, 2097384, 983046, 6, 2097385, 1048582, 6, 2097386, 1114118, 6, 2162919, 917510, 6, 2162920, 983046, 6, 2162921, 1048582, 6, 2162922, 1114118, 6, 2228455, 917510, 6, 2228456, 983046, 6, 2228457, 1048582, 6, 2228458, 1114118, 6, 2097387, 917510, 6, 2097388, 983046, 6, 2097389, 1048582, 6, 2097390, 1114118, 6, 2162923, 917510, 6, 2162924, 983046, 6, 2162925, 1048582, 6, 2162926, 1114118, 6, 2228459, 917510, 6, 2228460, 983046, 6, 2228461, 1048582, 6, 2228462, 1114118, 6, 2097391, 917510, 6, 2097392, 983046, 6, 2097393, 1048582, 6, 2097394, 1114118, 6, 2162927, 917510, 6, 2162928, 983046, 6, 2162929, 1048582, 6, 2162930, 1114118, 6, 2228463, 917510, 6, 2228464, 983046, 6, 2228465, 1048582, 6, 2228466, 1114118, 6, 2097395, 917510, 6, 2097396, 983046, 6, 2097397, 1048582, 6, 2097398, 1114118, 6, 2162931, 917510, 6, 2162932, 983046, 6, 2162933, 1048582, 6, 2162934, 1114118, 6, 2228467, 917510, 6, 2228468, 983046, 6, 2228469, 1048582, 6, 2228470, 1114118, 6, 2097399, 917510, 6, 2097400, 983046, 6, 2097401, 1048582, 6, 2097402, 1114118, 6, 2162935, 917510, 6, 2162936, 983046, 6, 2162937, 1048582, 6, 2162938, 1114118, 6, 2228471, 917510, 6, 2228472, 983046, 6, 2228473, 1048582, 6, 2228474, 1114118, 6, 2097403, 917510, 6, 2097404, 983046, 6, 2097405, 1048582, 6, 2097406, 1114118, 6, 2162939, 917510, 6, 2162940, 983046, 6, 2162941, 1048582, 6, 2162942, 1114118, 6, 2228475, 917510, 6, 2228476, 983046, 6, 2228477, 1048582, 6, 2228478, 1114118, 6, 2097407, 917510, 6, 2097408, 983046, 6, 2162943, 917510, 6, 2162944, 983046, 6, 2228479, 917510, 6, 2228480, 983046, 6, 2293977, 917510, 6, 2293978, 983046, 6, 2293979, 1048582, 6, 2293980, 1114118, 6, 2359513, 917510, 6, 2359514, 983046, 6, 2359515, 1048582, 6, 2359516, 1114118, 6, 2425049, 917510, 6, 2425050, 983046, 6, 2425051, 1048582, 6, 2425052, 1114118, 6, 2490585, 917510, 6, 2490586, 983046, 6, 2490587, 1048582, 6, 2490588, 1114118, 6, 2293981, 917510, 6, 2293982, 983046, 6, 2293983, 1048582, 6, 2293984, 1114118, 6, 2359517, 917510, 6, 2359518, 983046, 6, 2359519, 1048582, 6, 2359520, 1114118, 6, 2425053, 917510, 6, 2425054, 983046, 6, 2425055, 1048582, 6, 2425056, 1114118, 6, 2490589, 917510, 6, 2490590, 983046, 6, 2490591, 1048582, 6, 2490592, 1114118, 6, 2293985, 917510, 6, 2293986, 983046, 6, 2293987, 1048582, 6, 2293988, 1114118, 6, 2359521, 917510, 6, 2359522, 983046, 6, 2359523, 1048582, 6, 2359524, 1114118, 6, 2425057, 917510, 6, 2425058, 983046, 6, 2425059, 1048582, 6, 2425060, 1114118, 6, 2490593, 917510, 6, 2490594, 983046, 6, 2490595, 1048582, 6, 2490596, 1114118, 6, 2293989, 917510, 6, 2293990, 983046, 6, 2293991, 1048582, 6, 2293992, 1114118, 6, 2359525, 917510, 6, 2359526, 983046, 6, 2359527, 1048582, 6, 2359528, 1114118, 6, 2425061, 917510, 6, 2425062, 983046, 6, 2425063, 1048582, 6, 2425064, 1114118, 6, 2490597, 917510, 6, 2490598, 983046, 6, 2490599, 1048582, 6, 2490600, 1114118, 6, 2293993, 917510, 6, 2293994, 983046, 6, 2293995, 1048582, 6, 2293996, 1114118, 6, 2359529, 917510, 6, 2359530, 983046, 6, 2359531, 1048582, 6, 2359532, 1114118, 6, 2425065, 917510, 6, 2425066, 983046, 6, 2425067, 1048582, 6, 2425068, 1114118, 6, 2490601, 917510, 6, 2490602, 983046, 6, 2490603, 1048582, 6, 2490604, 1114118, 6, 2293997, 917510, 6, 2293998, 983046, 6, 2293999, 1048582, 6, 2294000, 1114118, 6, 2359533, 917510, 6, 2359534, 983046, 6, 2359535, 1048582, 6, 2359536, 1114118, 6, 2425069, 917510, 6, 2425070, 983046, 6, 2425071, 1048582, 6, 2425072, 1114118, 6, 2490605, 917510, 6, 2490606, 983046, 6, 2490607, 1048582, 6, 2490608, 1114118, 6, 2294001, 917510, 6, 2294002, 983046, 6, 2294003, 1048582, 6, 2294004, 1114118, 6, 2359537, 917510, 6, 2359538, 983046, 6, 2359539, 1048582, 6, 2359540, 1114118, 6, 2425073, 917510, 6, 2425074, 983046, 6, 2425075, 1048582, 6, 2425076, 1114118, 6, 2490609, 917510, 6, 2490610, 983046, 6, 2490611, 1048582, 6, 2490612, 1114118, 6, 2294005, 917510, 6, 2294006, 983046, 6, 2294007, 1048582, 6, 2294008, 1114118, 6, 2359541, 917510, 6, 2359542, 983046, 6, 2359543, 1048582, 6, 2359544, 1114118, 6, 2425077, 917510, 6, 2425078, 983046, 6, 2425079, 1048582, 6, 2425080, 1114118, 6, 2490613, 917510, 6, 2490614, 983046, 6, 2490615, 1048582, 6, 2490616, 1114118, 6, 2294009, 917510, 6, 2294010, 983046, 6, 2294011, 1048582, 6, 2294012, 1114118, 6, 2359545, 917510, 6, 2359546, 983046, 6, 2359547, 1048582, 6, 2359548, 1114118, 6, 2425081, 917510, 6, 2425082, 983046, 6, 2425083, 1048582, 6, 2425084, 1114118, 6, 2490617, 917510, 6, 2490618, 983046, 6, 2490619, 1048582, 6, 2490620, 1114118, 6, 2294013, 917510, 6, 2294014, 983046, 6, 2294015, 1048582, 6, 2294016, 1114118, 6, 2359549, 917510, 6, 2359550, 983046, 6, 2359551, 1048582, 6, 2359552, 1114118, 6, 2425085, 917510, 6, 2425086, 983046, 6, 2425087, 1048582, 6, 2425088, 1114118, 6, 2490621, 917510, 6, 2490622, 983046, 6, 2490623, 1048582, 6, 2490624, 1114118, 6, 2228487, 917510, 6, 2228488, 983046, 6, 2228489, 1048582, 6, 2228490, 1114118, 6, 2294023, 917510, 6, 2294024, 983046, 6, 2294025, 1048582, 6, 2294026, 1114118, 6, 2359559, 917510, 6, 2359560, 983046, 6, 2359561, 1048582, 6, 2359562, 1114118, 6, 2425095, 917510, 6, 2425096, 983046, 6, 2425097, 1048582, 6, 2425098, 1114118, 6, 2490631, 917510, 6, 2490632, 983046, 6, 2490633, 1048582, 6, 2490634, 1114118, 6, 2556167, 917510, 6, 2556168, 983046, 6, 2556169, 1048582, 6, 2556170, 1114118, 6, 2228491, 917510, 6, 2294027, 917510, 6, 2359563, 917510, 6, 2425099, 917510, 6, 2490635, 917510, 6, 2556171, 917510, 6, 1835282, 917510, 6, 1835283, 983046, 6, 1835284, 1048582, 6, 1835285, 1114118, 6, 1900818, 917510, 6, 1900819, 983046, 6, 1900820, 1048582, 6, 1900821, 1114118, 6, 1966354, 917510, 6, 1966355, 983046, 6, 1966356, 1048582, 6, 1966357, 1114118, 6, 2031890, 917510, 6, 2031891, 983046, 6, 2031892, 1048582, 6, 2031893, 1114118, 6, 2097426, 917510, 6, 2097427, 983046, 6, 2097428, 1048582, 6, 2097429, 1114118, 6, 2162962, 917510, 6, 2162963, 983046, 6, 2162964, 1048582, 6, 2162965, 1114118, 6, 2228498, 917510, 6, 2228499, 983046, 6, 2228500, 1048582, 6, 2228501, 1114118, 6, 2294034, 917510, 6, 2294035, 983046, 6, 2294036, 1048582, 6, 2294037, 1114118, 6, 1835286, 917510, 6, 1900822, 917510, 6, 1966358, 917510, 6, 2031894, 917510, 6, 2097430, 917510, 6, 2162966, 917510, 6, 2228502, 917510, 6, 2294038, 917510, 6, 1704208, 917510, 5, 1769744, 917510, 6, 1704209, 983046, 5, 1769745, 983046, 6, 1835280, 917510, 6, 1835281, 983046, 6, 1900816, 917510, 6, 1900817, 983046, 6, 1966352, 917510, 6, 1966353, 983046, 6, 2031888, 917510, 6, 2031889, 983046, 6, 2097424, 917510, 6, 2097425, 983046, 6, 2162960, 917510, 6, 2162961, 983046, 6, 2228496, 917510, 6, 2228497, 983046, 6, 2294032, 917510, 6, 2294033, 983046, 6, 2031879, 917510, 5, 2031880, 983046, 5, 2031881, 1048582, 5, 2031882, 1114118, 5, 2031883, 917510, 5, 1704215, 917510, 5, 1769751, 917510, 6, 1704216, 983046, 5, 1769752, 983046, 6, 1704217, 1048582, 5, 1769753, 1048582, 6, 1704218, 1114118, 5, 1769754, 1114118, 6, 1704219, 917510, 5, 1769755, 917510, 6, 1704220, 983046, 5, 1769756, 983046, 6, 1704221, 1048582, 5, 1769757, 1048582, 6, 1704222, 1114118, 5, 1769758, 1114118, 6, 1704223, 917510, 5, 1769759, 917510, 6, 1704224, 983046, 5, 1769760, 983046, 6, 1704225, 1048582, 5, 1769761, 1048582, 6, 1704226, 1114118, 5, 1769762, 1114118, 6, 1704227, 917510, 5, 1769763, 917510, 6, 1704228, 983046, 5, 1769764, 983046, 6, 1704229, 1048582, 5, 1769765, 1048582, 6, 1704230, 1114118, 5, 1769766, 1114118, 6, 1704231, 917510, 5, 1769767, 917510, 6, 1704232, 983046, 5, 1769768, 983046, 6, 1704233, 1048582, 5, 1769769, 1048582, 6, 1704234, 1114118, 5, 1769770, 1114118, 6, 1704235, 917510, 5, 1769771, 917510, 6, 1704236, 983046, 5, 1769772, 983046, 6, 1704237, 1048582, 5, 1769773, 1048582, 6, 1704238, 1114118, 5, 1769774, 1114118, 6, 1704239, 917510, 5, 1769775, 917510, 6, 1704240, 983046, 5, 1769776, 983046, 6, 1704241, 1048582, 5, 1769777, 1048582, 6, 1704242, 1114118, 5, 1769778, 1114118, 6, 1704243, 917510, 5, 1769779, 917510, 6, 1704244, 983046, 5, 1769780, 983046, 6, 1704245, 1048582, 5, 1769781, 1048582, 6, 1835287, 917510, 6, 1835288, 983046, 6, 1835289, 1048582, 6, 1835290, 1114118, 6, 1900823, 917510, 6, 1900824, 983046, 6, 1900825, 1048582, 6, 1900826, 1114118, 6, 1966359, 917510, 6, 1966360, 983046, 6, 1966361, 1048582, 6, 1966362, 1114118, 6, 2031895, 917510, 6, 2031896, 983046, 6, 2031897, 1048582, 6, 2031898, 1114118, 6, 2097431, 917510, 6, 2097432, 983046, 6, 2097433, 1048582, 6, 2097434, 1114118, 6, 2162967, 917510, 6, 2162968, 983046, 6, 2162969, 1048582, 6, 2162970, 1114118, 6, 2228503, 917510, 6, 2228504, 983046, 6, 2228505, 1048582, 6, 2228506, 1114118, 6, 2294039, 917510, 6, 2294040, 983046, 6, 2294041, 1048582, 6, 2294042, 1114118, 6, 1835291, 917510, 6, 1835292, 983046, 6, 1835293, 1048582, 6, 1835294, 1114118, 6, 1900827, 917510, 6, 1900828, 983046, 6, 1900829, 1048582, 6, 1900830, 1114118, 6, 1966363, 917510, 6, 1966364, 983046, 6, 1966365, 1048582, 6, 1966366, 1114118, 6, 2031899, 917510, 6, 2031900, 983046, 6, 2031901, 1048582, 6, 2031902, 1114118, 6, 2097435, 917510, 6, 2097436, 983046, 6, 2097437, 1048582, 6, 2097438, 1114118, 6, 2162971, 917510, 6, 2162972, 983046, 6, 2162973, 1048582, 6, 2162974, 1114118, 6, 2228507, 917510, 6, 2228508, 983046, 6, 2228509, 1048582, 6, 2228510, 1114118, 6, 2294043, 917510, 6, 2294044, 983046, 6, 2294045, 1048582, 6, 2294046, 1114118, 6, 1835295, 917510, 6, 1835296, 983046, 6, 1835297, 1048582, 6, 1835298, 1114118, 6, 1900831, 917510, 6, 1900832, 983046, 6, 1900833, 1048582, 6, 1900834, 1114118, 6, 1966367, 917510, 6, 1966368, 983046, 6, 1966369, 1048582, 6, 1966370, 1114118, 6, 2031903, 917510, 6, 2031904, 983046, 6, 2031905, 1048582, 6, 2031906, 1114118, 6, 2097439, 917510, 6, 2097440, 983046, 6, 2097441, 1048582, 6, 2097442, 1114118, 6, 2162975, 917510, 6, 2162976, 983046, 6, 2162977, 1048582, 6, 2162978, 1114118, 6, 2228511, 917510, 6, 2228512, 983046, 6, 2228513, 1048582, 6, 2228514, 1114118, 6, 2294047, 917510, 6, 2294048, 983046, 6, 2294049, 1048582, 6, 2294050, 1114118, 6, 1835299, 917510, 6, 1835300, 983046, 6, 1835301, 1048582, 6, 1835302, 1114118, 6, 1900835, 917510, 6, 1900836, 983046, 6, 1900837, 1048582, 6, 1900838, 1114118, 6, 1966371, 917510, 6, 1966372, 983046, 6, 1966373, 1048582, 6, 1966374, 1114118, 6, 2031907, 917510, 6, 2031908, 983046, 6, 2031909, 1048582, 6, 2031910, 1114118, 6, 2097443, 917510, 6, 2097444, 983046, 6, 2097445, 1048582, 6, 2097446, 1114118, 6, 2162979, 917510, 6, 2162980, 983046, 6, 2162981, 1048582, 6, 2162982, 1114118, 6, 2228515, 917510, 6, 2228516, 983046, 6, 2228517, 1048582, 6, 2228518, 1114118, 6, 2294051, 917510, 6, 2294052, 983046, 6, 2294053, 1048582, 6, 2294054, 1114118, 6, 1835303, 917510, 6, 1835304, 983046, 6, 1835305, 1048582, 6, 1835306, 1114118, 6, 1900839, 917510, 6, 1900840, 983046, 6, 1900841, 1048582, 6, 1900842, 1114118, 6, 1966375, 917510, 6, 1966376, 983046, 6, 1966377, 1048582, 6, 1966378, 1114118, 6, 2031911, 917510, 6, 2031912, 983046, 6, 2031913, 1048582, 6, 2031914, 1114118, 6, 2097447, 917510, 6, 2097448, 983046, 6, 2097449, 1048582, 6, 2097450, 1114118, 6, 2162983, 917510, 6, 2162984, 983046, 6, 2162985, 1048582, 6, 2162986, 1114118, 6, 2228519, 917510, 6, 2228520, 983046, 6, 2228521, 1048582, 6, 2228522, 1114118, 6, 2294055, 917510, 6, 2294056, 983046, 6, 2294057, 1048582, 6, 2294058, 1114118, 6, 1835307, 917510, 6, 1835308, 983046, 6, 1835309, 1048582, 6, 1835310, 1114118, 6, 1900843, 917510, 6, 1900844, 983046, 6, 1900845, 1048582, 6, 1900846, 1114118, 6, 1966379, 917510, 6, 1966380, 983046, 6, 1966381, 1048582, 6, 1966382, 1114118, 6, 2031915, 917510, 6, 2031916, 983046, 6, 2031917, 1048582, 6, 2031918, 1114118, 6, 2097451, 917510, 6, 2097452, 983046, 6, 2097453, 1048582, 6, 2097454, 1114118, 6, 2162987, 917510, 6, 2162988, 983046, 6, 2162989, 1048582, 6, 2162990, 1114118, 6, 2228523, 917510, 6, 2228524, 983046, 6, 2228525, 1048582, 6, 2228526, 1114118, 6, 2294059, 917510, 6, 2294060, 983046, 6, 2294061, 1048582, 6, 2294062, 1114118, 6, 1835311, 917510, 6, 1835312, 983046, 6, 1835313, 1048582, 6, 1835314, 1114118, 6, 1900847, 917510, 6, 1900848, 983046, 6, 1900849, 1048582, 6, 1900850, 1114118, 6, 1966383, 917510, 6, 1966384, 983046, 6, 1966385, 1048582, 6, 1966386, 1114118, 6, 2031919, 917510, 6, 2031920, 983046, 6, 2031921, 1048582, 6, 2031922, 1114118, 6, 2097455, 917510, 6, 2097456, 983046, 6, 2097457, 1048582, 6, 2097458, 1114118, 6, 2162991, 917510, 6, 2162992, 983046, 6, 2162993, 1048582, 6, 2162994, 1114118, 6, 2228527, 917510, 6, 2228528, 983046, 6, 2228529, 1048582, 6, 2228530, 1114118, 6, 2294063, 917510, 6, 2294064, 983046, 6, 2294065, 1048582, 6, 2294066, 1114118, 6, 1835315, 917510, 6, 1835316, 983046, 6, 1835317, 1048582, 6, 1900851, 917510, 6, 1900852, 983046, 6, 1900853, 1048582, 6, 1966387, 917510, 6, 1966388, 983046, 6, 1966389, 1048582, 6, 2031923, 917510, 6, 2031924, 983046, 6, 2031925, 1048582, 6, 2097459, 917510, 6, 2097460, 983046, 6, 2097461, 1048582, 6, 2162995, 917510, 6, 2162996, 983046, 6, 2162997, 1048582, 6, 2228531, 917510, 6, 2228532, 983046, 6, 2228533, 1048582, 6, 2294067, 917510, 6, 2294068, 983046, 6, 2294069, 1048582, 6, 2031616, 917510, 5, 2097152, 917510, 6, 2031617, 983046, 5, 2097153, 983046, 6, 2031618, 1048582, 5, 2097154, 1048582, 6, 2031619, 1114118, 5, 2097155, 1114118, 6, 2031620, 917510, 5, 2097156, 917510, 6, 2031621, 983046, 5, 2097157, 983046, 6, 2031622, 1048582, 5, 2097158, 1048582, 6, 2031623, 1114118, 5, 2097159, 1114118, 6, 2031624, 917510, 5, 2097160, 917510, 6, 2031625, 983046, 5, 2097161, 983046, 6, 2031626, 1048582, 5, 2097162, 1048582, 6, 2162688, 917510, 6, 2162689, 983046, 6, 2162690, 1048582, 6, 2162691, 1114118, 6, 2228224, 917510, 6, 2228225, 983046, 6, 2228226, 1048582, 6, 2228227, 1114118, 6, 2293760, 917510, 6, 2293761, 983046, 6, 2293762, 1048582, 6, 2293763, 1114118, 6, 2359296, 917510, 6, 2359297, 983046, 6, 2359298, 1048582, 6, 2359299, 1114118, 6, 2424832, 917510, 6, 2424833, 983046, 6, 2424834, 1048582, 6, 2424835, 1114118, 6, 2490368, 917510, 6, 2490369, 983046, 6, 2490370, 1048582, 6, 2490371, 1114118, 6, 2555904, 917510, 6, 2555905, 983046, 6, 2555906, 1048582, 6, 2555907, 1114118, 6, 2621440, 917510, 6, 2621441, 983046, 6, 2621442, 1048582, 6, 2621443, 1114118, 6, 2162692, 917510, 6, 2162693, 983046, 6, 2162694, 1048582, 6, 2162695, 1114118, 6, 2228228, 917510, 6, 2228229, 983046, 6, 2228230, 1048582, 6, 2228231, 1114118, 6, 2293764, 917510, 6, 2293765, 983046, 6, 2293766, 1048582, 6, 2293767, 1114118, 6, 2359300, 917510, 6, 2359301, 983046, 6, 2359302, 1048582, 6, 2359303, 1114118, 6, 2424836, 917510, 6, 2424837, 983046, 6, 2424838, 1048582, 6, 2424839, 1114118, 6, 2490372, 917510, 6, 2490373, 983046, 6, 2490374, 1048582, 6, 2490375, 1114118, 6, 2555908, 917510, 6, 2555909, 983046, 6, 2555910, 1048582, 6, 2555911, 1114118, 6, 2621444, 917510, 6, 2621445, 983046, 6, 2621446, 1048582, 6, 2621447, 1114118, 6, 2162696, 917510, 6, 2162697, 983046, 6, 2162698, 1048582, 6, 2228232, 917510, 6, 2228233, 983046, 6, 2228234, 1048582, 6, 2293768, 917510, 6, 2293769, 983046, 6, 2293770, 1048582, 6, 2359304, 917510, 6, 2359305, 983046, 6, 2359306, 1048582, 6, 2424840, 917510, 6, 2424841, 983046, 6, 2424842, 1048582, 6, 2490376, 917510, 6, 2490377, 983046, 6, 2490378, 1048582, 6, 2555912, 917510, 6, 2555913, 983046, 6, 2555914, 1048582, 6, 2621448, 917510, 6, 2621449, 983046, 6, 2621450, 1048582, 6, 2031627, 917510, 5, 2031628, 983046, 5, 2031629, 1048582, 5, 2031630, 1114118, 5, 2031631, 917510, 5, 2031632, 983046, 5, 2031633, 1048582, 5, 2031634, 1114118, 5, 2031635, 917510, 5, 2031636, 983046, 5, 2031637, 1048582, 5, 2031638, 1114118, 5, 2031639, 917510, 5, 2031640, 983046, 5, 2031641, 1048582, 5, 2031642, 1114118, 5, 2097163, 917510, 6, 2097164, 983046, 6, 2097165, 1048582, 6, 2097166, 1114118, 6, 2162699, 917510, 6, 2162700, 983046, 6, 2162701, 1048582, 6, 2162702, 1114118, 6, 2228235, 917510, 6, 2228236, 983046, 6, 2228237, 1048582, 6, 2228238, 1114118, 6, 2293771, 917510, 6, 2293772, 983046, 6, 2293773, 1048582, 6, 2293774, 1114118, 6, 2359307, 917510, 6, 2359308, 983046, 6, 2359309, 1048582, 6, 2359310, 1114118, 6, 2424843, 917510, 6, 2424844, 983046, 6, 2424845, 1048582, 6, 2424846, 1114118, 6, 2490379, 917510, 6, 2490380, 983046, 6, 2490381, 1048582, 6, 2490382, 1114118, 6, 2555915, 917510, 6, 2555916, 983046, 6, 2555917, 1048582, 6, 2555918, 1114118, 6, 2621451, 917510, 6, 2621452, 983046, 6, 2621453, 1048582, 6, 2621454, 1114118, 6, 2097167, 917510, 6, 2097168, 983046, 6, 2097169, 1048582, 6, 2097170, 1114118, 6, 2162703, 917510, 6, 2162704, 983046, 6, 2162705, 1048582, 6, 2162706, 1114118, 6, 2228239, 917510, 6, 2228240, 983046, 6, 2228241, 1048582, 6, 2228242, 1114118, 6, 2293775, 917510, 6, 2293776, 983046, 6, 2293777, 1048582, 6, 2293778, 1114118, 6, 2359311, 917510, 6, 2359312, 983046, 6, 2359313, 1048582, 6, 2359314, 1114118, 6, 2424847, 917510, 6, 2424848, 983046, 6, 2424849, 1048582, 6, 2424850, 1114118, 6, 2490383, 917510, 6, 2490384, 983046, 6, 2490385, 1048582, 6, 2490386, 1114118, 6, 2555919, 917510, 6, 2555920, 983046, 6, 2555921, 1048582, 6, 2555922, 1114118, 6, 2621455, 917510, 6, 2621456, 983046, 6, 2621457, 1048582, 6, 2621458, 1114118, 6, 2097171, 917510, 6, 2097172, 983046, 6, 2097173, 1048582, 6, 2097174, 1114118, 6, 2162707, 917510, 6, 2162708, 983046, 6, 2162709, 1048582, 6, 2162710, 1114118, 6, 2228243, 917510, 6, 2228244, 983046, 6, 2228245, 1048582, 6, 2228246, 1114118, 6, 2293779, 917510, 6, 2293780, 983046, 6, 2293781, 1048582, 6, 2293782, 1114118, 6, 2359315, 917510, 6, 2359316, 983046, 6, 2359317, 1048582, 6, 2359318, 1114118, 6, 2424851, 917510, 6, 2424852, 983046, 6, 2424853, 1048582, 6, 2424854, 1114118, 6, 2490387, 917510, 6, 2490388, 983046, 6, 2490389, 1048582, 6, 2490390, 1114118, 6, 2555923, 917510, 6, 2555924, 983046, 6, 2555925, 1048582, 6, 2555926, 1114118, 6, 2621459, 917510, 6, 2621460, 983046, 6, 2621461, 1048582, 6, 2621462, 1114118, 6, 2097175, 917510, 6, 2097176, 983046, 6, 2097177, 1048582, 6, 2097178, 1114118, 6, 2162711, 917510, 6, 2162712, 983046, 6, 2162713, 1048582, 6, 2162714, 1114118, 6, 2228247, 917510, 6, 2228248, 983046, 6, 2228249, 1048582, 6, 2228250, 1114118, 6, 2293783, 917510, 6, 2293784, 983046, 6, 2293785, 1048582, 6, 2293786, 1114118, 6, 2359319, 917510, 6, 2359320, 983046, 6, 2359321, 1048582, 6, 2359322, 1114118, 6, 2424855, 917510, 6, 2424856, 983046, 6, 2424857, 1048582, 6, 2424858, 1114118, 6, 2490391, 917510, 6, 2490392, 983046, 6, 2490393, 1048582, 6, 2490394, 1114118, 6, 2555927, 917510, 6, 2555928, 983046, 6, 2555929, 1048582, 6, 2555930, 1114118, 6, 2621463, 917510, 6, 2621464, 983046, 6, 2621465, 1048582, 6, 2621466, 1114118, 6, 2686976, 917510, 6, 2686977, 983046, 6, 2686978, 1048582, 6, 2686979, 1114118, 6, 2752512, 917510, 6, 2752513, 983046, 6, 2752514, 1048582, 6, 2752515, 1114118, 6, 2818048, 917510, 6, 2818049, 983046, 6, 2818050, 1048582, 6, 2818051, 1114118, 6, 2883584, 917510, 6, 2883585, 983046, 6, 2883586, 1048582, 6, 2883587, 1114118, 6, 2949120, 917510, 6, 2949121, 983046, 6, 2949122, 1048582, 6, 2949123, 917510, 6, 2686980, 917510, 6, 2686981, 983046, 6, 2686982, 1048582, 6, 2686983, 1114118, 6, 2752516, 917510, 6, 2752517, 983046, 6, 2752518, 1048582, 6, 2752519, 1114118, 6, 2818052, 917510, 6, 2818053, 983046, 6, 2818054, 1048582, 6, 2818055, 1114118, 6, 2883588, 917510, 6, 2883589, 983046, 6, 2883590, 1048582, 6, 2883591, 1114118, 6, 2949124, 983046, 6, 2949125, 1048582, 6, 2949126, 1114118, 6, 2949127, 917510, 6, 2686984, 917510, 6, 2686985, 983046, 6, 2686986, 1048582, 6, 2686987, 1114118, 6, 2752520, 917510, 6, 2752521, 983046, 6, 2752522, 1048582, 6, 2752523, 1114118, 6, 2818056, 917510, 6, 2818057, 983046, 6, 2818058, 1048582, 6, 2818059, 1114118, 6, 2883592, 917510, 6, 2883593, 983046, 6, 2883594, 1048582, 6, 2883595, 1114118, 6, 2949128, 983046, 6, 2949129, 1048582, 6, 2949130, 1048582, 6, 2949131, 1114118, 6, 2686988, 917510, 6, 2686989, 983046, 6, 2686990, 1048582, 6, 2686991, 1114118, 6, 2752524, 917510, 6, 2752525, 983046, 6, 2752526, 1048582, 6, 2752527, 1114118, 6, 2818060, 917510, 6, 2818061, 983046, 6, 2818062, 1048582, 6, 2818063, 1114118, 6, 2883596, 917510, 6, 2883597, 983046, 6, 2883598, 1048582, 6, 2883599, 1114118, 6, 2949132, 917510, 6, 2949133, 983046, 6, 2949134, 1048582, 6, 2949135, 1114118, 6, 2686992, 917510, 6, 2686993, 983046, 6, 2686994, 1048582, 6, 2686995, 1114118, 6, 2752528, 917510, 6, 2752529, 983046, 6, 2752530, 1048582, 6, 2752531, 1114118, 6, 2818064, 917510, 6, 2818065, 983046, 6, 2818066, 1048582, 6, 2818067, 1114118, 6, 2883600, 917510, 6, 2883601, 983046, 6, 2883602, 1048582, 6, 2883603, 1114118, 6, 2949136, 917510, 6, 2949137, 983046, 6, 2949138, 1048582, 6, 2949139, 1114118, 6, 2686996, 917510, 6, 2686997, 983046, 6, 2686998, 1048582, 6, 2686999, 1114118, 6, 2752532, 917510, 6, 2752533, 983046, 6, 2752534, 1048582, 6, 2752535, 1114118, 6, 2818068, 917510, 6, 2818069, 983046, 6, 2818070, 1048582, 6, 2818071, 1114118, 6, 2883604, 917510, 6, 2883605, 983046, 6, 2883606, 1048582, 6, 2883607, 1114118, 6, 2949140, 917510, 6, 2949141, 983046, 6, 2949142, 1048582, 6, 2949143, 1114118, 6, 2687000, 917510, 6, 2687001, 983046, 6, 2687002, 1048582, 6, 2752536, 917510, 6, 2752537, 983046, 6, 2752538, 1048582, 6, 2818072, 917510, 6, 2818073, 983046, 6, 2818074, 1048582, 6, 2883608, 917510, 6, 2883609, 983046, 6, 2883610, 1048582, 6, 2949144, 917510, 6, 2949145, 983046, 6, 2949146, 1048582, 6, 2031643, 917510, 5, 2097179, 917510, 6, 2031644, 983046, 5, 2097180, 983046, 6, 2031645, 1048582, 5, 2097181, 1048582, 6, 2031646, 1114118, 5, 2097182, 1114118, 6, 2031647, 917510, 5, 2097183, 917510, 6, 2031648, 983046, 5, 2097184, 983046, 6, 2031649, 1048582, 5, 2097185, 1048582, 6, 2031650, 1114118, 5, 2097186, 1114118, 6, 2031651, 917510, 5, 2097187, 917510, 6, 2031652, 983046, 5, 2097188, 983046, 6, 2031653, 1048582, 5, 2097189, 1048582, 6, 2031654, 1114118, 5, 2097190, 1114118, 6, 2031655, 917510, 5, 2097191, 917510, 6, 2031656, 983046, 5, 2097192, 983046, 6, 2031657, 1048582, 5, 2097193, 1048582, 6, 2031658, 1114118, 5, 2097194, 1114118, 6, 2031659, 917510, 5, 2097195, 917510, 6, 2031660, 983046, 5, 2097196, 983046, 6, 2031661, 1048582, 5, 2097197, 1048582, 6, 2031662, 1114118, 5, 2097198, 1114118, 6, 2031663, 917510, 5, 2097199, 917510, 6, 2031664, 983046, 5, 2097200, 983046, 6, 2031665, 1048582, 5, 2097201, 1048582, 6, 2031666, 1114118, 5, 2097202, 1114118, 6, 2031667, 917510, 5, 2097203, 917510, 6, 2031668, 983046, 5, 2097204, 983046, 6, 2031669, 1048582, 5, 2097205, 1048582, 6, 2031670, 1114118, 5, 2097206, 1114118, 6, 2031671, 917510, 5, 2097207, 917510, 6, 2162715, 917510, 6, 2162716, 983046, 6, 2162717, 1048582, 6, 2162718, 1114118, 6, 2228251, 917510, 6, 2228252, 983046, 6, 2228253, 1048582, 6, 2228254, 1114118, 6, 2293787, 917510, 6, 2293788, 983046, 6, 2293789, 1048582, 6, 2293790, 1114118, 6, 2359323, 917510, 6, 2359324, 983046, 6, 2359325, 1048582, 6, 2359326, 1114118, 6, 2424859, 917510, 6, 2424860, 983046, 6, 2424861, 1048582, 6, 2424862, 1114118, 6, 2490395, 917510, 6, 2490396, 983046, 6, 2490397, 1048582, 6, 2490398, 1114118, 6, 2555931, 917510, 6, 2555932, 983046, 6, 2555933, 1048582, 6, 2555934, 1114118, 6, 2621467, 917510, 6, 2621468, 983046, 6, 2621469, 1048582, 6, 2621470, 1114118, 6, 2687003, 917510, 6, 2687004, 983046, 6, 2687005, 1048582, 6, 2687006, 1114118, 6, 2752539, 917510, 6, 2752540, 983046, 6, 2752541, 1048582, 6, 2752542, 1114118, 6, 2818075, 917510, 6, 2818076, 983046, 6, 2818077, 1048582, 6, 2818078, 1114118, 6, 2883611, 917510, 6, 2883612, 983046, 6, 2883613, 1048582, 6, 2883614, 1114118, 6, 2949147, 917510, 6, 2949148, 983046, 6, 2949149, 1048582, 6, 2949150, 1114118, 6, 2162719, 917510, 6, 2162720, 983046, 6, 2162721, 1048582, 6, 2162722, 1114118, 6, 2228255, 917510, 6, 2228256, 983046, 6, 2228257, 1048582, 6, 2228258, 1114118, 6, 2293791, 917510, 6, 2293792, 983046, 6, 2293793, 1048582, 6, 2293794, 1114118, 6, 2359327, 917510, 6, 2359328, 983046, 6, 2359329, 1048582, 6, 2359330, 1114118, 6, 2424863, 917510, 6, 2424864, 983046, 6, 2424865, 1048582, 6, 2424866, 1114118, 6, 2490399, 917510, 6, 2490400, 983046, 6, 2490401, 1048582, 6, 2490402, 1114118, 6, 2555935, 917510, 6, 2555936, 983046, 6, 2555937, 1048582, 6, 2555938, 1114118, 6, 2621471, 917510, 6, 2621472, 983046, 6, 2621473, 1048582, 6, 2621474, 1114118, 6, 2687007, 917510, 6, 2687008, 983046, 6, 2687009, 1048582, 6, 2687010, 1114118, 6, 2752543, 917510, 6, 2752544, 983046, 6, 2752545, 1048582, 6, 2752546, 1114118, 6, 2818079, 917510, 6, 2818080, 983046, 6, 2818081, 1048582, 6, 2818082, 1114118, 6, 2883615, 917510, 6, 2883616, 983046, 6, 2883617, 1048582, 6, 2883618, 1114118, 6, 2949151, 917510, 6, 2949152, 983046, 6, 2949153, 1048582, 6, 2949154, 1114118, 6, 2162723, 917510, 6, 2162724, 983046, 6, 2162725, 1048582, 6, 2162726, 1114118, 6, 2228259, 917510, 6, 2228260, 983046, 6, 2228261, 1048582, 6, 2228262, 1114118, 6, 2293795, 917510, 6, 2293796, 983046, 6, 2293797, 1048582, 6, 2293798, 1114118, 6, 2359331, 917510, 6, 2359332, 983046, 6, 2359333, 1048582, 6, 2359334, 1114118, 6, 2424867, 917510, 6, 2424868, 983046, 6, 2424869, 1048582, 6, 2424870, 1114118, 6, 2490403, 917510, 6, 2490404, 983046, 6, 2490405, 1048582, 6, 2490406, 1114118, 6, 2555939, 917510, 6, 2555940, 983046, 6, 2555941, 1048582, 6, 2555942, 1114118, 6, 2621475, 917510, 6, 2621476, 983046, 6, 2621477, 1048582, 6, 2621478, 1114118, 6, 2687011, 917510, 6, 2687012, 983046, 6, 2687013, 1048582, 6, 2687014, 1114118, 6, 2752547, 917510, 6, 2752548, 983046, 6, 2752549, 1048582, 6, 2752550, 1114118, 6, 2818083, 917510, 6, 2818084, 983046, 6, 2818085, 1048582, 6, 2818086, 1114118, 6, 2883619, 917510, 6, 2883620, 983046, 6, 2883621, 1048582, 6, 2883622, 1114118, 6, 2949155, 917510, 6, 2949156, 983046, 6, 2949157, 1048582, 6, 2949158, 1114118, 6, 2162727, 917510, 6, 2162728, 983046, 6, 2162729, 1048582, 6, 2162730, 1114118, 6, 2228263, 917510, 6, 2228264, 983046, 6, 2228265, 1048582, 6, 2228266, 1114118, 6, 2293799, 917510, 6, 2293800, 983046, 6, 2293801, 1048582, 6, 2293802, 1114118, 6, 2359335, 917510, 6, 2359336, 983046, 6, 2359337, 1048582, 6, 2359338, 1114118, 6, 2424871, 917510, 6, 2424872, 983046, 6, 2424873, 1048582, 6, 2424874, 1114118, 6, 2490407, 917510, 6, 2490408, 983046, 6, 2490409, 1048582, 6, 2490410, 1114118, 6, 2555943, 917510, 6, 2555944, 983046, 6, 2555945, 1048582, 6, 2555946, 1114118, 6, 2621479, 917510, 6, 2621480, 983046, 6, 2621481, 1048582, 6, 2621482, 1114118, 6, 2687015, 917510, 6, 2687016, 983046, 6, 2687017, 1048582, 6, 2687018, 1114118, 6, 2752551, 917510, 6, 2752552, 983046, 6, 2752553, 1048582, 6, 2752554, 1114118, 6, 2818087, 917510, 6, 2818088, 983046, 6, 2818089, 1048582, 6, 2818090, 1114118, 6, 2883623, 917510, 6, 2883624, 983046, 6, 2883625, 1048582, 6, 2883626, 1114118, 6, 2949159, 917510, 6, 2949160, 983046, 6, 2949161, 1048582, 6, 2949162, 1114118, 6, 2162731, 917510, 6, 2162732, 983046, 6, 2162733, 1048582, 6, 2162734, 1114118, 6, 2228267, 917510, 6, 2228268, 983046, 6, 2228269, 1048582, 6, 2228270, 1114118, 6, 2293803, 917510, 6, 2293804, 983046, 6, 2293805, 1048582, 6, 2293806, 1114118, 6, 2359339, 917510, 6, 2359340, 983046, 6, 2359341, 1048582, 6, 2359342, 1114118, 6, 2424875, 917510, 6, 2424876, 983046, 6, 2424877, 1048582, 6, 2424878, 1114118, 6, 2490411, 917510, 6, 2490412, 983046, 6, 2490413, 1048582, 6, 2490414, 1114118, 6, 2555947, 917510, 6, 2555948, 983046, 6, 2555949, 1048582, 6, 2555950, 1114118, 6, 2621483, 917510, 6, 2621484, 983046, 6, 2621485, 1048582, 6, 2621486, 1114118, 6, 2687019, 917510, 6, 2687020, 983046, 6, 2687021, 1048582, 6, 2687022, 1114118, 6, 2752555, 917510, 6, 2752556, 983046, 6, 2752557, 1048582, 6, 2752558, 1114118, 6, 2818091, 917510, 6, 2818092, 983046, 6, 2818093, 1048582, 6, 2818094, 1114118, 6, 2883627, 917510, 6, 2883628, 983046, 6, 2883629, 1048582, 6, 2883630, 1114118, 6, 2949163, 917510, 6, 2949164, 983046, 6, 2949165, 1048582, 6, 2949166, 1114118, 6, 2162735, 917510, 6, 2162736, 983046, 6, 2162737, 1048582, 6, 2162738, 1114118, 6, 2228271, 917510, 6, 2228272, 983046, 6, 2228273, 1048582, 6, 2228274, 1114118, 6, 2293807, 917510, 6, 2293808, 983046, 6, 2293809, 1048582, 6, 2293810, 1114118, 6, 2359343, 917510, 6, 2359344, 983046, 6, 2359345, 1048582, 6, 2359346, 1114118, 6, 2424879, 917510, 6, 2424880, 983046, 6, 2424881, 1048582, 6, 2424882, 1114118, 6, 2490415, 917510, 6, 2490416, 983046, 6, 2490417, 1048582, 6, 2490418, 1114118, 6, 2555951, 917510, 6, 2555952, 983046, 6, 2555953, 1048582, 6, 2555954, 1114118, 6, 2621487, 917510, 6, 2621488, 983046, 6, 2621489, 1048582, 6, 2621490, 1114118, 6, 2687023, 917510, 6, 2687024, 983046, 6, 2687025, 1048582, 6, 2687026, 1114118, 6, 2752559, 917510, 6, 2752560, 983046, 6, 2752561, 1048582, 6, 2752562, 1114118, 6, 2818095, 917510, 6, 2818096, 983046, 6, 2818097, 1048582, 6, 2818098, 1114118, 6, 2883631, 917510, 6, 2883632, 983046, 6, 2883633, 1048582, 6, 2883634, 1114118, 6, 2949167, 917510, 6, 2949168, 983046, 6, 2949169, 1048582, 6, 2949170, 1114118, 6, 2162739, 917510, 6, 2162740, 983046, 6, 2162741, 1048582, 6, 2162742, 1114118, 6, 2228275, 917510, 6, 2228276, 983046, 6, 2228277, 1048582, 6, 2228278, 1114118, 6, 2293811, 917510, 6, 2293812, 983046, 6, 2293813, 1048582, 6, 2293814, 1114118, 6, 2359347, 917510, 6, 2359348, 983046, 6, 2359349, 1048582, 6, 2359350, 1114118, 6, 2424883, 917510, 6, 2424884, 983046, 6, 2424885, 1048582, 6, 2424886, 1114118, 6, 2490419, 917510, 6, 2490420, 983046, 6, 2490421, 1048582, 6, 2490422, 1114118, 6, 2555955, 917510, 6, 2555956, 983046, 6, 2555957, 1048582, 6, 2555958, 1114118, 6, 2621491, 917510, 6, 2621492, 983046, 6, 2621493, 1048582, 6, 2621494, 1114118, 6, 2687027, 917510, 6, 2687028, 983046, 6, 2687029, 1048582, 6, 2687030, 1114118, 6, 2752563, 917510, 6, 2752564, 983046, 6, 2752565, 1048582, 6, 2752566, 1114118, 6, 2818099, 917510, 6, 2818100, 983046, 6, 2818101, 1048582, 6, 2818102, 1114118, 6, 2883635, 917510, 6, 2883636, 983046, 6, 2883637, 1048582, 6, 2883638, 1114118, 6, 2949171, 917510, 6, 2949172, 983046, 6, 2949173, 1048582, 6, 2949174, 1114118, 6, 2162743, 917510, 6, 2228279, 917510, 6, 2293815, 917510, 6, 2359351, 917510, 6, 2424887, 917510, 6, 2490423, 917510, 6, 2555959, 917510, 6, 2621495, 917510, 6, 2687031, 917510, 6, 2752567, 917510, 6, 2818103, 917510, 6, 2883639, 917510, 6, 2949175, 917510, 6, 1703992, 917510, 6, 1703993, 983046, 6, 1703994, 1048582, 6, 1703995, 1114118, 6, 1638456, 917510, 5, 1638457, 983046, 5, 1638458, 1048582, 5, 1638459, 1114118, 5, 1638460, 917510, 5, 1703996, 917510, 6, 1638461, 983046, 5, 1703997, 983046, 6, 1638462, 1048582, 5, 1703998, 1048582, 6, 1638463, 1114118, 5, 1703999, 1114118, 6, 1900609, 917510, 5, 1966145, 917510, 6, 1900610, 983046, 5, 1966146, 983046, 6, 1900611, 1048582, 5, 1966147, 1048582, 6, 1900612, 1114118, 5, 1966148, 1114118, 6, 1900613, 917510, 5, 1966149, 917510, 6, 1900614, 983046, 5, 1966150, 983046, 6, 1900615, 1048582, 5, 1966151, 1048582, 6, 1900616, 1114118, 5, 1966152, 1114118, 6, 1572941, 917510, 5, 1638477, 917510, 6, 1572942, 983046, 5, 1638478, 983046, 6, 1572943, 1048582, 5, 1638479, 1048582, 6, 1572944, 1114118, 5, 1638480, 1114118, 6, 1572945, 917510, 5, 1638481, 917510, 6, 1572946, 983046, 5, 1638482, 983046, 6, 1572947, 1048582, 5, 1638483, 1048582, 6, 1572948, 1114118, 5, 1638484, 1114118, 6, 1572949, 917510, 5, 1638485, 917510, 6, 1572950, 983046, 5, 1638486, 983046, 6, 1572951, 1048582, 5, 1638487, 1048582, 6, 1572952, 1114118, 5, 1638488, 1114118, 6, 1572953, 917510, 5, 1638489, 917510, 6, 1704013, 917510, 6, 1704014, 983046, 6, 1704015, 1048582, 6, 1704016, 1114118, 6, 1769549, 917510, 6, 1769550, 983046, 6, 1769551, 1048582, 6, 1769552, 1114118, 6, 1835085, 917510, 6, 1835086, 983046, 6, 1835087, 1048582, 6, 1835088, 1114118, 6, 1704017, 917510, 6, 1704018, 983046, 6, 1704019, 1048582, 6, 1704020, 1114118, 6, 1769553, 917510, 6, 1769554, 983046, 6, 1769555, 1048582, 6, 1769556, 1114118, 6, 1835089, 917510, 6, 1835090, 983046, 6, 1835091, 1048582, 6, 1835092, 1114118, 6, 1704021, 917510, 6, 1704022, 983046, 6, 1704023, 1048582, 6, 1704024, 1114118, 6, 1769557, 917510, 6, 1769558, 983046, 6, 1769559, 1048582, 6, 1769560, 1114118, 6, 1835093, 917510, 6, 1835094, 983046, 6, 1835095, 1048582, 6, 1835096, 1114118, 6, 1704025, 917510, 6, 1769561, 917510, 6, 1835097, 917510, 6, 1441882, 917510, 5, 1507418, 917510, 6, 1441883, 983046, 5, 1507419, 983046, 6, 1441884, 1048582, 5, 1507420, 1048582, 6, 1441885, 1114118, 5, 1507421, 1114118, 6, 1441886, 917510, 5, 1507422, 917510, 6, 1441887, 983046, 5, 1507423, 983046, 6, 1441888, 1048582, 5, 1507424, 1048582, 6, 1441889, 1114118, 5, 1507425, 1114118, 6, 1441890, 917510, 5, 1507426, 917510, 6, 1441891, 983046, 5, 1507427, 983046, 6, 1441892, 1048582, 5, 1507428, 1048582, 6, 1441893, 1114118, 5, 1507429, 1114118, 6, 1441894, 917510, 5, 1507430, 917510, 6, 1441895, 983046, 5, 1507431, 983046, 6, 1441896, 1048582, 5, 1507432, 1048582, 6, 1572954, 917510, 6, 1572955, 983046, 6, 1572956, 1048582, 6, 1572957, 1114118, 6, 1638490, 917510, 6, 1638491, 983046, 6, 1638492, 1048582, 6, 1638493, 1114118, 6, 1704026, 917510, 6, 1704027, 983046, 6, 1704028, 1048582, 6, 1704029, 1114118, 6, 1769562, 917510, 6, 1769563, 983046, 6, 1769564, 1048582, 6, 1769565, 1114118, 6, 1835098, 917510, 6, 1835099, 983046, 6, 1835100, 1048582, 6, 1835101, 1114118, 6, 1572958, 917510, 6, 1572959, 983046, 6, 1572960, 1048582, 6, 1572961, 1114118, 6, 1638494, 917510, 6, 1638495, 983046, 6, 1638496, 1048582, 6, 1638497, 1114118, 6, 1704030, 917510, 6, 1704031, 983046, 6, 1704032, 1048582, 6, 1704033, 1114118, 6, 1769566, 917510, 6, 1769567, 983046, 6, 1769568, 1048582, 6, 1769569, 1114118, 6, 1835102, 917510, 6, 1835103, 983046, 6, 1835104, 1048582, 6, 1835105, 1114118, 6, 1572962, 917510, 6, 1572963, 983046, 6, 1572964, 1048582, 6, 1572965, 1114118, 6, 1638498, 917510, 6, 1638499, 983046, 6, 1638500, 1048582, 6, 1638501, 1114118, 6, 1704034, 917510, 6, 1704035, 983046, 6, 1704036, 1048582, 6, 1704037, 1114118, 6, 1769570, 917510, 6, 1769571, 983046, 6, 1769572, 1048582, 6, 1769573, 1114118, 6, 1835106, 917510, 6, 1835107, 983046, 6, 1835108, 1048582, 6, 1835109, 1114118, 6, 1572966, 917510, 6, 1572967, 983046, 6, 1572968, 1048582, 6, 1638502, 917510, 6, 1638503, 983046, 6, 1638504, 1048582, 6, 1704038, 917510, 6, 1704039, 983046, 6, 1704040, 1048582, 6, 1769574, 917510, 6, 1769575, 983046, 6, 1769576, 1048582, 6, 1835110, 917510, 6, 1835111, 983046, 6, 1835112, 1048582, 6, 1835118, 917510, 5, 1900654, 917510, 6, 1835119, 983046, 5, 1900655, 983046, 6, 1835120, 1048582, 5, 1900656, 1048582, 6, 1835121, 1114118, 5, 1900657, 1114118, 6, 1835122, 917510, 5, 1900658, 917510, 6, 1835123, 983046, 5, 1900659, 983046, 6, 1835124, 1048582, 5, 1900660, 1048582, 6, 1835125, 1114118, 5, 1900661, 1114118, 6, 1835126, 917510, 5, 1900662, 917510, 6, 1835127, 983046, 5, 1900663, 983046, 6, 1835128, 1048582, 5, 1900664, 1048582, 6, 1835129, 1114118, 5, 1900665, 1114118, 6, 1835130, 917510, 5, 1900666, 917510, 6, 1835131, 983046, 5, 1900667, 983046, 6, 1835132, 1048582, 5, 1900668, 1048582, 6, 1835133, 1114118, 5, 1900669, 1114118, 6, 1835134, 917510, 5, 1900670, 917510, 6, 1835135, 983046, 5, 1900671, 983046, 6, 1835136, 1048582, 5, 1900672, 1048582, 6, 1835137, 1114118, 5, 1900673, 1114118, 6, 1835138, 917510, 5, 1900674, 917510, 6, 1835139, 983046, 5, 1900675, 983046, 6, 1966190, 917510, 6, 1966191, 983046, 6, 1966192, 1048582, 6, 1966193, 1114118, 6, 2031726, 917510, 6, 2031727, 983046, 6, 2031728, 1048582, 6, 2031729, 1114118, 6, 2097262, 917510, 6, 2097263, 983046, 6, 2097264, 1048582, 6, 2097265, 1114118, 6, 2162798, 917510, 6, 2162799, 983046, 6, 2162800, 1048582, 6, 2162801, 1114118, 6, 2228334, 917510, 6, 2228335, 983046, 6, 2228336, 1048582, 6, 2228337, 1114118, 6, 1966194, 917510, 6, 1966195, 983046, 6, 1966196, 1048582, 6, 1966197, 1114118, 6, 2031730, 917510, 6, 2031731, 983046, 6, 2031732, 1048582, 6, 2031733, 1114118, 6, 2097266, 917510, 6, 2097267, 983046, 6, 2097268, 1048582, 6, 2097269, 1114118, 6, 2162802, 917510, 6, 2162803, 983046, 6, 2162804, 1048582, 6, 2162805, 1114118, 6, 2228338, 917510, 6, 2228339, 983046, 6, 2228340, 1048582, 6, 2228341, 1114118, 6, 1966198, 917510, 6, 1966199, 983046, 6, 1966200, 1048582, 6, 1966201, 1114118, 6, 2031734, 917510, 6, 2031735, 983046, 6, 2031736, 1048582, 6, 2031737, 1114118, 6, 2097270, 917510, 6, 2097271, 983046, 6, 2097272, 1048582, 6, 2097273, 1114118, 6, 2162806, 917510, 6, 2162807, 983046, 6, 2162808, 1048582, 6, 2162809, 1114118, 6, 2228342, 917510, 6, 2228343, 983046, 6, 2228344, 1048582, 6, 2228345, 1114118, 6, 1966202, 917510, 6, 1966203, 983046, 6, 1966204, 1048582, 6, 1966205, 1114118, 6, 2031738, 917510, 6, 2031739, 983046, 6, 2031740, 1048582, 6, 2031741, 1114118, 6, 2097274, 917510, 6, 2097275, 983046, 6, 2097276, 1048582, 6, 2097277, 1114118, 6, 2162810, 917510, 6, 2162811, 983046, 6, 2162812, 1048582, 6, 2162813, 1114118, 6, 2228346, 917510, 6, 2228347, 983046, 6, 2228348, 1048582, 6, 2228349, 1114118, 6, 1966206, 917510, 6, 1966207, 983046, 6, 1966208, 1048582, 6, 1966209, 1114118, 6, 2031742, 917510, 6, 2031743, 983046, 6, 2031744, 1048582, 6, 2031745, 1114118, 6, 2097278, 917510, 6, 2097279, 983046, 6, 2097280, 1048582, 6, 2097281, 1114118, 6, 2162814, 917510, 6, 2162815, 983046, 6, 2162816, 1048582, 6, 2162817, 1114118, 6, 2228350, 917510, 6, 2228351, 983046, 6, 2228352, 1048582, 6, 2228353, 1114118, 6, 1966210, 917510, 6, 1966211, 983046, 6, 2031746, 917510, 6, 2031747, 983046, 6, 2097282, 917510, 6, 2097283, 983046, 6, 2162818, 917510, 6, 2162819, 983046, 6, 2228354, 917510, 6, 2228355, 983046, 6, 1835140, 917510, 5, 1900676, 917510, 6, 1835141, 983046, 5, 1900677, 983046, 6, 1835142, 1048582, 5, 1900678, 1048582, 6, 1835143, 1114118, 5, 1900679, 1114118, 6, 1835144, 917510, 5, 1900680, 917510, 6, 1835145, 983046, 5, 1900681, 983046, 6, 1835146, 1048582, 5, 1900682, 1048582, 6, 1835147, 1114118, 5, 1900683, 1114118, 6, 1835148, 917510, 5, 1900684, 917510, 6, 1835149, 983046, 5, 1900685, 983046, 6, 1835150, 1048582, 5, 1900686, 1048582, 6, 1835151, 1114118, 5, 1900687, 1114118, 6, 1835152, 917510, 5, 1900688, 917510, 6, 1835153, 983046, 5, 1900689, 983046, 6, 1835154, 1048582, 5, 1900690, 1048582, 6, 1835155, 1114118, 5, 1900691, 1114118, 6, 1835156, 917510, 5, 1900692, 917510, 6, 1835157, 983046, 5, 1900693, 983046, 6, 1835158, 1048582, 5, 1900694, 1048582, 6, 1835159, 1114118, 5, 1900695, 1114118, 6, 1966212, 917510, 6, 1966213, 983046, 6, 1966214, 1048582, 6, 1966215, 1114118, 6, 2031748, 917510, 6, 2031749, 983046, 6, 2031750, 1048582, 6, 2031751, 1114118, 6, 2097284, 917510, 6, 2097285, 983046, 6, 2097286, 1048582, 6, 2097287, 1114118, 6, 2162820, 917510, 6, 2162821, 983046, 6, 2162822, 1048582, 6, 2162823, 1114118, 6, 2228356, 917510, 6, 2228357, 983046, 6, 2228358, 1048582, 6, 2228359, 1114118, 6, 1966216, 917510, 6, 1966217, 983046, 6, 1966218, 1048582, 6, 1966219, 1114118, 6, 2031752, 917510, 6, 2031753, 983046, 6, 2031754, 1048582, 6, 2031755, 1114118, 6, 2097288, 917510, 6, 2097289, 983046, 6, 2097290, 1048582, 6, 2097291, 1114118, 6, 2162824, 917510, 6, 2162825, 983046, 6, 2162826, 1048582, 6, 2162827, 1114118, 6, 2228360, 917510, 6, 2228361, 983046, 6, 2228362, 1048582, 6, 2228363, 1114118, 6, 1966220, 917510, 6, 1966221, 983046, 6, 1966222, 1048582, 6, 1966223, 1114118, 6, 2031756, 917510, 6, 2031757, 983046, 6, 2031758, 1048582, 6, 2031759, 1114118, 6, 2097292, 917510, 6, 2097293, 983046, 6, 2097294, 1048582, 6, 2097295, 1114118, 6, 2162828, 917510, 6, 2162829, 983046, 6, 2162830, 1048582, 6, 2162831, 1114118, 6, 2228364, 917510, 6, 2228365, 983046, 6, 2228366, 1048582, 6, 2228367, 1114118, 6, 1966224, 917510, 6, 1966225, 983046, 6, 1966226, 1048582, 6, 1966227, 1114118, 6, 2031760, 917510, 6, 2031761, 983046, 6, 2031762, 1048582, 6, 2031763, 1114118, 6, 2097296, 917510, 6, 2097297, 983046, 6, 2097298, 1048582, 6, 2097299, 1114118, 6, 2162832, 917510, 6, 2162833, 983046, 6, 2162834, 1048582, 6, 2162835, 1114118, 6, 2228368, 917510, 6, 2228369, 983046, 6, 2228370, 1048582, 6, 2228371, 1114118, 6, 1966228, 917510, 6, 1966229, 983046, 6, 1966230, 1048582, 6, 1966231, 1114118, 6, 2031764, 917510, 6, 2031765, 983046, 6, 2031766, 1048582, 6, 2031767, 1114118, 6, 2097300, 917510, 6, 2097301, 983046, 6, 2097302, 1048582, 6, 2097303, 1114118, 6, 2162836, 917510, 6, 2162837, 983046, 6, 2162838, 1048582, 6, 2162839, 1114118, 6, 2228372, 917510, 6, 2228373, 983046, 6, 2228374, 1048582, 6, 2228375, 1114118, 6, 1376380, 917510, 5, 1376381, 983046, 5, 1376382, 1048582, 5, 1376383, 1114118, 5, 1376384, 917510, 5, 1507480, 917510, 5, 1573016, 917510, 6, 1507481, 983046, 5, 1573017, 983046, 6, 1507482, 1048582, 5, 1573018, 1048582, 6, 1507483, 1114118, 5, 1573019, 1114118, 6, 1507484, 917510, 5, 1573020, 917510, 6, 1507485, 983046, 5, 1573021, 983046, 6, 1507486, 1048582, 5, 1573022, 1048582, 6, 1638552, 917510, 6, 1638553, 983046, 6, 1638554, 1048582, 6, 1638555, 1114118, 6, 1704088, 917510, 6, 1704089, 983046, 6, 1704090, 1048582, 6, 1704091, 1114118, 6, 1769624, 917510, 6, 1769625, 983046, 6, 1769626, 1048582, 6, 1769627, 1114118, 6, 1835160, 917510, 6, 1835161, 983046, 6, 1835162, 1048582, 6, 1835163, 1114118, 6, 1900696, 917510, 6, 1900697, 983046, 6, 1900698, 1048582, 6, 1900699, 1114118, 6, 1966232, 917510, 6, 1966233, 983046, 6, 1966234, 1048582, 6, 1966235, 1114118, 6, 2031768, 917510, 6, 2031769, 983046, 6, 2031770, 1048582, 6, 2031771, 1114118, 6, 2097304, 917510, 6, 2097305, 983046, 6, 2097306, 1048582, 6, 2097307, 1114118, 6, 2162840, 917510, 6, 2162841, 983046, 6, 2162842, 1048582, 6, 2162843, 1114118, 6, 2228376, 917510, 6, 2228377, 983046, 6, 2228378, 1048582, 6, 2228379, 1114118, 6, 1638556, 917510, 6, 1638557, 983046, 6, 1638558, 1048582, 6, 1704092, 917510, 6, 1704093, 983046, 6, 1704094, 1048582, 6, 1769628, 917510, 6, 1769629, 983046, 6, 1769630, 1048582, 6, 1835164, 917510, 6, 1835165, 983046, 6, 1835166, 1048582, 6, 1900700, 917510, 6, 1900701, 983046, 6, 1900702, 1048582, 6, 1966236, 917510, 6, 1966237, 983046, 6, 1966238, 1048582, 6, 2031772, 917510, 6, 2031773, 983046, 6, 2031774, 1048582, 6, 2097308, 917510, 6, 2097309, 983046, 6, 2097310, 1048582, 6, 2162844, 917510, 6, 2162845, 983046, 6, 2162846, 1048582, 6, 2228380, 917510, 6, 2228381, 983046, 6, 2228382, 1048582, 6, 1441916, 917510, 6, 1441917, 983046, 6, 1441918, 1048582, 6, 1441919, 1114118, 6, 1441920, 917510, 6, 1179714, 917510, 5, 1179715, 917510, 5, 1179716, 1048582, 5, 1179717, 1114118, 5, 1179718, 1048582, 5, 1245250, 917510, 6, 1245251, 983046, 6, 1245252, 1048582, 6, 1245253, 1114118, 6, 1245254, 1048582, 6, 1179731, 917510, 5, 1245267, 917510, 6, 1179732, 983046, 5, 1245268, 983046, 6, 1179733, 1048582, 5, 1245269, 1048582, 6, 1245398, 917510, 5, 1310934, 917510, 6, 1245399, 983046, 5, 1310935, 983046, 6, 1245400, 1048582, 5, 1310936, 1048582, 6, 1245401, 1114118, 5, 1310937, 1114118, 6, 1245402, 917510, 5, 1310938, 917510, 6, 917734, 917510, 5, 983270, 917510, 6, 917735, 983046, 5, 983271, 983046, 6, 917736, 1048582, 5, 983272, 1048582, 6, 917737, 1114118, 5, 983273, 1114118, 6, 917738, 917510, 5, 983274, 917510, 6, 1245501, 917510, 5, 1311037, 917510, 6, 1245502, 983046, 5, 1311038, 983046, 6, 1245503, 1048582, 5, 1311039, 1048582, 6, 1245504, 1114118, 5, 1311040, 1114118, 6, 1245505, 917510, 5, 1311041, 917510, 6, 1245506, 917510, 5, 1311042, 983046, 6, 1245507, 983046, 5, 1311043, 1048582, 6, 1245508, 1048582, 5, 1311044, 1114118, 6, 1245509, 1114118, 5, 1311045, 917510, 6, 1245510, 917510, 5, 1311046, 983046, 6, 1245511, 983046, 5, 1311047, 1048582, 6, 1245512, 1048582, 5, 1311048, 1114118, 6, 1245513, 1114118, 5, 1311049, 917510, 6, 1245514, 917510, 5, 1311050, 983046, 6, 1245515, 983046, 5, 1311051, 1048582, 6, 1245516, 1048582, 5, 1311052, 1114118, 6, 1245517, 1114118, 5, 1311053, 917510, 6, 1245518, 917510, 5, 1311054, 983046, 6, 1245519, 983046, 5, 1311055, 1048582, 6, 1245520, 1048582, 5, 1311056, 1114118, 6, 1245521, 1114118, 5, 1311057, 917510, 6, 1245522, 917510, 5, 1311058, 983046, 6, 1245523, 983046, 5, 1311059, 1048582, 6, 1245524, 1048582, 5, 1311060, 1114118, 6, 1245525, 1114118, 5, 1311061, 917510, 6, 1245526, 917510, 5, 1311062, 983046, 6, 1245527, 983046, 5, 1311063, 1048582, 6, 1245528, 1048582, 5, 1311064, 1114118, 6, 1245529, 1114118, 5, 1311065, 917510, 6, 1245530, 917510, 5, 1311066, 983046, 6, 1245531, 983046, 5, 1311067, 1048582, 6, 1245532, 1048582, 5, 1311068, 1114118, 6, 1245533, 1114118, 5, 1311069, 917510, 6, 1245534, 917510, 5, 1311070, 983046, 6, 1245535, 983046, 5, 1311071, 1048582, 6, 1245536, 1048582, 5, 1311072, 1114118, 6, 1245537, 1114118, 5, 1311073, 917510, 6, 1245538, 917510, 5, 1311074, 983046, 6, 1245539, 983046, 5, 1311075, 1048582, 6, 1245540, 1048582, 5, 1311076, 1114118, 6, 1245541, 1114118, 5, 1311077, 917510, 6, 1245542, 917510, 5, 1311078, 983046, 6, 1245543, 983046, 5, 1311079, 1048582, 6, 1245544, 1048582, 5, 1311080, 1114118, 6, 1245545, 1114118, 5, 1311081, 917510, 6, 1245546, 917510, 5, 1311082, 983046, 6, 1245547, 983046, 5, 1311083, 1048582, 6, 1245548, 1048582, 5, 1311084, 1114118, 6, 1245549, 1114118, 5, 1311085, 917510, 6, 1245550, 917510, 5, 1311086, 983046, 6, 1245551, 983046, 5, 1311087, 1048582, 6, 1245552, 1048582, 5, 1311088, 1114118, 6, 1245553, 1114118, 5, 1311089, 917510, 6, 1245554, 917510, 5, 1311090, 983046, 6, 1245555, 983046, 5, 1311091, 1048582, 6, 1245556, 1048582, 5, 1311092, 1114118, 6, 1245557, 1114118, 5, 1311093, 917510, 6, 1245558, 917510, 5, 1311094, 983046, 6, 1245559, 983046, 5, 1311095, 1048582, 6, 1245560, 1048582, 5, 1311096, 1114118, 6, 1245561, 1114118, 5, 1311097, 917510, 6, 1245562, 917510, 5, 1311098, 983046, 6, 1245563, 983046, 5, 1311099, 1048582, 6, 1245564, 1048582, 5, 1311100, 1114118, 6, 1245565, 1114118, 5, 1311101, 917510, 6, 1245566, 917510, 5, 1311102, 983046, 6, 1245567, 983046, 5, 1311103, 1048582, 6, 1245568, 1048582, 5, 1311104, 1114118, 6, 1245569, 1114118, 5, 1311105, 917510, 6, 1245570, 917510, 5, 1311106, 983046, 6, 1245571, 917510, 5, 1311107, 1048582, 6, 1245572, 983046, 5, 1311108, 1114118, 6, 1245573, 1048582, 5, 1311109, 917510, 6, 1245574, 1114118, 5, 1311110, 983046, 6, 1245575, 917510, 5, 1311111, 1048582, 6, 1245576, 983046, 5, 1311112, 1114118, 6, 1245577, 1048582, 5, 1311113, 917510, 6, 1245578, 1114118, 5, 1311114, 983046, 6, 1245579, 917510, 5, 1311115, 1048582, 6, 1245580, 983046, 5, 1311116, 1114118, 6, 1245581, 1048582, 5, 1311117, 917510, 6, 1245582, 1114118, 5, 1311118, 983046, 6, 1245583, 917510, 5, 1311119, 1048582, 6, 1245584, 983046, 5, 1311120, 1114118, 6, 1245585, 1048582, 5, 1311121, 917510, 6, 1245586, 1114118, 5, 1311122, 983046, 6, 1245587, 917510, 5, 1311123, 1048582, 6, 1245588, 983046, 5, 1311124, 1114118, 6, 1245589, 1048582, 5, 1311125, 917510, 6, 1245590, 1114118, 5, 1311126, 983046, 6, 1245591, 917510, 5, 1311127, 1048582, 6, 1245592, 983046, 5, 1311128, 1114118, 6, 1245593, 1048582, 5, 1311129, 917510, 6, 1245594, 1114118, 5, 1311130, 983046, 6, 1245595, 917510, 5, 1311131, 1048582, 6, 1245596, 983046, 5, 1311132, 1114118, 6, 1245597, 1048582, 5, 1311133, 917510, 6, 1245598, 1114118, 5, 1311134, 983046, 6, 1245599, 917510, 5, 1311135, 1048582, 6, 1245600, 983046, 5, 1311136, 1114118, 6, 1245601, 1048582, 5, 1311137, 917510, 6, 1245602, 1114118, 5, 1311138, 983046, 6, 1245603, 917510, 5, 1311139, 1048582, 6, 1245604, 983046, 5, 1311140, 1114118, 6, 1245605, 1048582, 5, 1311141, 917510, 6, 1245606, 1114118, 5, 1311142, 983046, 6, 1245607, 917510, 6, 1311143, 1048582, 6, 1245608, 983046, 6, 1311144, 1114118, 6, 1245609, 1048582, 6, 1311145, 917510, 6, 1245610, 983046, 6, 1311146, 983046, 6, 1245611, 1048582, 6, 1311147, 1048582, 6, 1245612, 1114118, 6, 1311148, 1114118, 6, 1245613, 917510, 6, 1311149, 917510, 6, 1376573, 917510, 6, 1376574, 983046, 6, 1376575, 1048582, 6, 1376576, 1114118, 6, 1442109, 917510, 6, 1442110, 983046, 6, 1442111, 1048582, 6, 1442112, 1114118, 6, 1507645, 917510, 6, 1507646, 983046, 6, 1507647, 1048582, 6, 1507648, 1114118, 6, 1573181, 917510, 6, 1573182, 983046, 6, 1573183, 1048582, 6, 1573184, 1114118, 6, 1638717, 917510, 6, 1638718, 983046, 6, 1638719, 1048582, 6, 1638720, 1114118, 6, 1704253, 917510, 6, 1704254, 983046, 6, 1704255, 1048582, 6, 1704256, 1114118, 6, 1769789, 917510, 6, 1769790, 983046, 6, 1769791, 1048582, 6, 1769792, 1114118, 6, 1835325, 917510, 6, 1835326, 983046, 6, 1835327, 1048582, 6, 1835328, 1114118, 6, 1900861, 917510, 6, 1900862, 983046, 6, 1900863, 1048582, 6, 1900864, 1114118, 6, 1966397, 917510, 6, 1966398, 983046, 6, 1966399, 1048582, 6, 1966400, 1114118, 6, 1376577, 917510, 6, 1376578, 983046, 6, 1376579, 1048582, 6, 1376580, 1114118, 6, 1442113, 917510, 6, 1442114, 983046, 6, 1442115, 1048582, 6, 1442116, 1114118, 6, 1507649, 917510, 6, 1507650, 983046, 6, 1507651, 1048582, 6, 1507652, 1114118, 6, 1573185, 917510, 6, 1573186, 983046, 6, 1573187, 1048582, 6, 1573188, 1114118, 6, 1638721, 917510, 6, 1638722, 983046, 6, 1638723, 1048582, 6, 1638724, 1114118, 6, 1704257, 917510, 6, 1704258, 983046, 6, 1704259, 1048582, 6, 1704260, 1114118, 6, 1769793, 917510, 6, 1769794, 983046, 6, 1769795, 1048582, 6, 1769796, 1114118, 6, 1835329, 917510, 6, 1835330, 983046, 6, 1835331, 1048582, 6, 1835332, 1114118, 6, 1900865, 917510, 6, 1900866, 983046, 6, 1900867, 1048582, 6, 1900868, 1114118, 6, 1966401, 917510, 6, 1966402, 983046, 6, 1966403, 1048582, 6, 1966404, 1114118, 6, 1376581, 917510, 6, 1376582, 983046, 6, 1376583, 1048582, 6, 1376584, 1114118, 6, 1442117, 917510, 6, 1442118, 983046, 6, 1442119, 1048582, 6, 1442120, 1114118, 6, 1507653, 917510, 6, 1507654, 983046, 6, 1507655, 1048582, 6, 1507656, 1114118, 6, 1573189, 917510, 6, 1573190, 983046, 6, 1573191, 1048582, 6, 1573192, 1114118, 6, 1638725, 917510, 6, 1638726, 983046, 6, 1638727, 1048582, 6, 1638728, 1114118, 6, 1704261, 917510, 6, 1704262, 983046, 6, 1704263, 1048582, 6, 1704264, 1114118, 6, 1769797, 917510, 6, 1769798, 983046, 6, 1769799, 1048582, 6, 1769800, 1114118, 6, 1835333, 917510, 6, 1835334, 983046, 6, 1835335, 1048582, 6, 1835336, 1114118, 6, 1900869, 917510, 6, 1900870, 983046, 6, 1900871, 1048582, 6, 1900872, 1114118, 6, 1966405, 917510, 6, 1966406, 983046, 6, 1966407, 1048582, 6, 1966408, 1114118, 6, 1376585, 917510, 6, 1376586, 983046, 6, 1376587, 1048582, 6, 1376588, 1114118, 6, 1442121, 917510, 6, 1442122, 983046, 6, 1442123, 1048582, 6, 1442124, 1114118, 6, 1507657, 917510, 6, 1507658, 983046, 6, 1507659, 1048582, 6, 1507660, 1114118, 6, 1573193, 917510, 6, 1573194, 983046, 6, 1573195, 1048582, 6, 1573196, 1114118, 6, 1638729, 917510, 6, 1638730, 983046, 6, 1638731, 1048582, 6, 1638732, 1114118, 6, 1704265, 917510, 6, 1704266, 983046, 6, 1704267, 1048582, 6, 1704268, 1114118, 6, 1769801, 917510, 6, 1769802, 983046, 6, 1769803, 1048582, 6, 1769804, 1114118, 6, 1835337, 917510, 6, 1835338, 983046, 6, 1835339, 1048582, 6, 1835340, 1114118, 6, 1900873, 917510, 6, 1900874, 983046, 6, 1900875, 1048582, 6, 1900876, 1114118, 6, 1966409, 917510, 6, 1966410, 983046, 6, 1966411, 1048582, 6, 1966412, 1114118, 6, 1376589, 917510, 6, 1376590, 983046, 6, 1376591, 1048582, 6, 1376592, 1114118, 6, 1442125, 917510, 6, 1442126, 983046, 6, 1442127, 1048582, 6, 1442128, 1114118, 6, 1507661, 917510, 6, 1507662, 983046, 6, 1507663, 1048582, 6, 1507664, 1114118, 6, 1573197, 917510, 6, 1573198, 983046, 6, 1573199, 1048582, 6, 1573200, 1114118, 6, 1638733, 917510, 6, 1638734, 983046, 6, 1638735, 1048582, 6, 1638736, 1114118, 6, 1704269, 917510, 6, 1704270, 983046, 6, 1704271, 1048582, 6, 1704272, 1114118, 6, 1769805, 917510, 6, 1769806, 983046, 6, 1769807, 1048582, 6, 1769808, 1114118, 6, 1835341, 917510, 6, 1835342, 983046, 6, 1835343, 1048582, 6, 1835344, 1114118, 6, 1900877, 917510, 6, 1900878, 983046, 6, 1900879, 1048582, 6, 1900880, 1114118, 6, 1966413, 917510, 6, 1966414, 983046, 6, 1966415, 1048582, 6, 1966416, 1114118, 6, 1376593, 917510, 6, 1376594, 983046, 6, 1376595, 1048582, 6, 1376596, 1114118, 6, 1442129, 917510, 6, 1442130, 983046, 6, 1442131, 1048582, 6, 1442132, 1114118, 6, 1507665, 917510, 6, 1507666, 983046, 6, 1507667, 1048582, 6, 1507668, 1114118, 6, 1573201, 917510, 6, 1573202, 983046, 6, 1573203, 1048582, 6, 1573204, 1114118, 6, 1638737, 917510, 6, 1638738, 983046, 6, 1638739, 1048582, 6, 1638740, 1114118, 6, 1704273, 917510, 6, 1704274, 983046, 6, 1704275, 1048582, 6, 1704276, 1114118, 6, 1769809, 917510, 6, 1769810, 983046, 6, 1769811, 1048582, 6, 1769812, 1114118, 6, 1835345, 917510, 6, 1835346, 983046, 6, 1835347, 1048582, 6, 1835348, 1114118, 6, 1900881, 917510, 6, 1900882, 983046, 6, 1900883, 1048582, 6, 1900884, 1114118, 6, 1966417, 917510, 6, 1966418, 983046, 6, 1966419, 1048582, 6, 1966420, 1114118, 6, 1376597, 917510, 6, 1376598, 983046, 6, 1376599, 1048582, 6, 1376600, 1114118, 6, 1442133, 917510, 6, 1442134, 983046, 6, 1442135, 1048582, 6, 1442136, 1114118, 6, 1507669, 917510, 6, 1507670, 983046, 6, 1507671, 1048582, 6, 1507672, 1114118, 6, 1573205, 917510, 6, 1573206, 983046, 6, 1573207, 1048582, 6, 1573208, 1114118, 6, 1638741, 917510, 6, 1638742, 983046, 6, 1638743, 1048582, 6, 1638744, 1114118, 6, 1704277, 917510, 6, 1704278, 983046, 6, 1704279, 1048582, 6, 1704280, 1114118, 6, 1769813, 917510, 6, 1769814, 983046, 6, 1769815, 1048582, 6, 1769816, 1114118, 6, 1835349, 917510, 6, 1835350, 983046, 6, 1835351, 1048582, 6, 1835352, 1114118, 6, 1900885, 917510, 6, 1900886, 983046, 6, 1900887, 1048582, 6, 1900888, 1114118, 6, 1966421, 917510, 6, 1966422, 983046, 6, 1966423, 1048582, 6, 1966424, 1114118, 6, 1376601, 917510, 6, 1376602, 983046, 6, 1376603, 1048582, 6, 1376604, 1114118, 6, 1442137, 917510, 6, 1442138, 983046, 6, 1442139, 1048582, 6, 1442140, 1114118, 6, 1507673, 917510, 6, 1507674, 983046, 6, 1507675, 1048582, 6, 1507676, 1114118, 6, 1573209, 917510, 6, 1573210, 983046, 6, 1573211, 1048582, 6, 1573212, 1114118, 6, 1638745, 917510, 6, 1638746, 983046, 6, 1638747, 1048582, 6, 1638748, 1114118, 6, 1704281, 917510, 6, 1704282, 983046, 6, 1704283, 1048582, 6, 1704284, 1114118, 6, 1769817, 917510, 6, 1769818, 983046, 6, 1769819, 1048582, 6, 1769820, 1114118, 6, 1835353, 917510, 6, 1835354, 983046, 6, 1835355, 1048582, 6, 1835356, 1114118, 6, 1900889, 917510, 6, 1900890, 983046, 6, 1900891, 1048582, 6, 1900892, 1114118, 6, 1966425, 917510, 6, 1966426, 983046, 6, 1966427, 1048582, 6, 1966428, 1114118, 6, 1376605, 917510, 6, 1376606, 983046, 6, 1376607, 1048582, 6, 1376608, 1114118, 6, 1442141, 917510, 6, 1442142, 983046, 6, 1442143, 1048582, 6, 1442144, 1114118, 6, 1507677, 917510, 6, 1507678, 983046, 6, 1507679, 1048582, 6, 1507680, 1114118, 6, 1573213, 917510, 6, 1573214, 983046, 6, 1573215, 1048582, 6, 1573216, 1114118, 6, 1638749, 917510, 6, 1638750, 983046, 6, 1638751, 1048582, 6, 1638752, 1114118, 6, 1704285, 917510, 6, 1704286, 983046, 6, 1704287, 1048582, 6, 1704288, 1114118, 6, 1769821, 917510, 6, 1769822, 983046, 6, 1769823, 1048582, 6, 1769824, 1114118, 6, 1835357, 917510, 6, 1835358, 983046, 6, 1835359, 1048582, 6, 1835360, 1114118, 6, 1900893, 917510, 6, 1900894, 983046, 6, 1900895, 1048582, 6, 1900896, 1114118, 6, 1966429, 917510, 6, 1966430, 983046, 6, 1966431, 1048582, 6, 1966432, 1114118, 6, 1376609, 917510, 6, 1376610, 983046, 6, 1376611, 1048582, 6, 1376612, 1114118, 6, 1442145, 917510, 6, 1442146, 983046, 6, 1442147, 1048582, 6, 1442148, 1114118, 6, 1507681, 917510, 6, 1507682, 983046, 6, 1507683, 1048582, 6, 1507684, 1114118, 6, 1573217, 917510, 6, 1573218, 983046, 6, 1573219, 1048582, 6, 1573220, 1114118, 6, 1638753, 917510, 6, 1638754, 983046, 6, 1638755, 1048582, 6, 1638756, 1114118, 6, 1704289, 917510, 6, 1704290, 983046, 6, 1704291, 1048582, 6, 1704292, 1114118, 6, 1769825, 917510, 6, 1769826, 983046, 6, 1769827, 1048582, 6, 1769828, 1114118, 6, 1835361, 917510, 6, 1835362, 983046, 6, 1835363, 1048582, 6, 1835364, 1114118, 6, 1900897, 917510, 6, 1900898, 983046, 6, 1900899, 1048582, 6, 1900900, 1114118, 6, 1966433, 917510, 6, 1966434, 983046, 6, 1966435, 1048582, 6, 1966436, 1114118, 6, 1376613, 917510, 6, 1376614, 983046, 6, 1376615, 1048582, 6, 1376616, 1114118, 6, 1442149, 917510, 6, 1442150, 983046, 6, 1442151, 1048582, 6, 1442152, 1114118, 6, 1507685, 917510, 6, 1507686, 983046, 6, 1507687, 1048582, 6, 1507688, 1114118, 6, 1573221, 917510, 6, 1573222, 983046, 6, 1573223, 1048582, 6, 1573224, 1114118, 6, 1638757, 917510, 6, 1638758, 983046, 6, 1638759, 1048582, 6, 1638760, 1114118, 6, 1704293, 917510, 6, 1704294, 983046, 6, 1704295, 1048582, 6, 1704296, 1114118, 6, 1769829, 917510, 6, 1769830, 983046, 6, 1769831, 1048582, 6, 1769832, 1114118, 6, 1835365, 917510, 6, 1835366, 983046, 6, 1835367, 1048582, 6, 1835368, 1114118, 6, 1900901, 917510, 6, 1900902, 983046, 6, 1900903, 1048582, 6, 1900904, 1114118, 6, 1966437, 917510, 6, 1966438, 983046, 6, 1966439, 1048582, 6, 1966440, 1114118, 6, 1376617, 917510, 6, 1376618, 983046, 6, 1376619, 1048582, 6, 1376620, 1114118, 6, 1442153, 917510, 6, 1442154, 983046, 6, 1442155, 1048582, 6, 1442156, 1114118, 6, 1507689, 917510, 6, 1507690, 983046, 6, 1507691, 1048582, 6, 1507692, 1114118, 6, 1573225, 917510, 6, 1573226, 983046, 6, 1573227, 1048582, 6, 1573228, 1114118, 6, 1638761, 917510, 6, 1638762, 983046, 6, 1638763, 1048582, 6, 1638764, 1114118, 6, 1704297, 917510, 6, 1704298, 983046, 6, 1704299, 1048582, 6, 1704300, 1114118, 6, 1769833, 917510, 6, 1769834, 983046, 6, 1769835, 1048582, 6, 1769836, 1114118, 6, 1835369, 917510, 6, 1835370, 983046, 6, 1835371, 1048582, 6, 1835372, 1114118, 6, 1900905, 917510, 6, 1900906, 983046, 6, 1900907, 1048582, 6, 1900908, 1114118, 6, 1966441, 917510, 6, 1966442, 983046, 6, 1966443, 1048582, 6, 1966444, 1114118, 6, 1376621, 917510, 6, 1376622, 983046, 6, 1376623, 1048582, 6, 1376624, 1114118, 6, 1442157, 917510, 6, 1442158, 983046, 6, 1442159, 1048582, 6, 1442160, 1114118, 6, 1507693, 917510, 6, 1507694, 983046, 6, 1507695, 1048582, 6, 1507696, 1114118, 6, 1573229, 917510, 6, 1573230, 983046, 6, 1573231, 1048582, 6, 1573232, 1114118, 6, 1638765, 917510, 6, 1638766, 983046, 6, 1638767, 1048582, 6, 1638768, 1114118, 6, 1704301, 917510, 6, 1704302, 983046, 6, 1704303, 1048582, 6, 1704304, 1114118, 6, 1769837, 917510, 6, 1769838, 983046, 6, 1769839, 1048582, 6, 1769840, 1114118, 6, 1835373, 917510, 6, 1835374, 983046, 6, 1835375, 1048582, 6, 1835376, 1114118, 6, 1900909, 917510, 6, 1900910, 983046, 6, 1900911, 1048582, 6, 1900912, 1114118, 6, 1966445, 917510, 6, 1966446, 983046, 6, 1966447, 1048582, 6, 1966448, 1114118, 6, 1376625, 917510, 6, 1376626, 983046, 6, 1376627, 1048582, 6, 1376628, 1114118, 6, 1442161, 917510, 6, 1442162, 983046, 6, 1442163, 1048582, 6, 1442164, 1114118, 6, 1507697, 917510, 6, 1507698, 983046, 6, 1507699, 1048582, 6, 1507700, 1114118, 6, 1573233, 917510, 6, 1573234, 983046, 6, 1573235, 1048582, 6, 1573236, 1114118, 6, 1638769, 917510, 6, 1638770, 983046, 6, 1638771, 1048582, 6, 1638772, 1114118, 6, 1704305, 917510, 6, 1704306, 983046, 6, 1704307, 1048582, 6, 1704308, 1114118, 6, 1769841, 917510, 6, 1769842, 983046, 6, 1769843, 1048582, 6, 1769844, 1114118, 6, 1835377, 917510, 6, 1835378, 983046, 6, 1835379, 1048582, 6, 1835380, 1114118, 6, 1900913, 917510, 6, 1900914, 983046, 6, 1900915, 1048582, 6, 1900916, 1114118, 6, 1966449, 917510, 6, 1966450, 983046, 6, 1966451, 1048582, 6, 1966452, 1114118, 6, 1376629, 917510, 6, 1376630, 983046, 6, 1376631, 1048582, 6, 1376632, 1114118, 6, 1442165, 917510, 6, 1442166, 983046, 6, 1442167, 1048582, 6, 1442168, 1114118, 6, 1507701, 917510, 6, 1507702, 983046, 6, 1507703, 1048582, 6, 1507704, 1114118, 6, 1573237, 917510, 6, 1573238, 983046, 6, 1573239, 1048582, 6, 1573240, 1114118, 6, 1638773, 917510, 6, 1638774, 983046, 6, 1638775, 1048582, 6, 1638776, 1114118, 6, 1704309, 917510, 6, 1704310, 983046, 6, 1704311, 1048582, 6, 1704312, 1114118, 6, 1769845, 917510, 6, 1769846, 983046, 6, 1769847, 1048582, 6, 1769848, 1114118, 6, 1835381, 917510, 6, 1835382, 983046, 6, 1835383, 1048582, 6, 1835384, 1114118, 6, 1900917, 917510, 6, 1900918, 983046, 6, 1900919, 1048582, 6, 1900920, 1114118, 6, 1966453, 917510, 6, 1966454, 983046, 6, 1966455, 1048582, 6, 1966456, 1114118, 6, 1376633, 917510, 6, 1376634, 983046, 6, 1376635, 1048582, 6, 1376636, 1114118, 6, 1442169, 917510, 6, 1442170, 983046, 6, 1442171, 1048582, 6, 1442172, 1114118, 6, 1507705, 917510, 6, 1507706, 983046, 6, 1507707, 1048582, 6, 1507708, 1114118, 6, 1573241, 917510, 6, 1573242, 983046, 6, 1573243, 1048582, 6, 1573244, 1114118, 6, 1638777, 917510, 6, 1638778, 983046, 6, 1638779, 1048582, 6, 1638780, 1114118, 6, 1704313, 917510, 6, 1704314, 983046, 6, 1704315, 1048582, 6, 1704316, 1114118, 6, 1769849, 917510, 6, 1769850, 983046, 6, 1769851, 1048582, 6, 1769852, 1114118, 6, 1835385, 917510, 6, 1835386, 983046, 6, 1835387, 1048582, 6, 1835388, 1114118, 6, 1900921, 917510, 6, 1900922, 983046, 6, 1900923, 1048582, 6, 1900924, 1114118, 6, 1966457, 917510, 6, 1966458, 983046, 6, 1966459, 1048582, 6, 1966460, 1114118, 6, 1376637, 917510, 6, 1376638, 983046, 6, 1376639, 1048582, 6, 1376640, 1114118, 6, 1442173, 917510, 6, 1442174, 983046, 6, 1442175, 1048582, 6, 1442176, 1114118, 6, 1507709, 917510, 6, 1507710, 983046, 6, 1507711, 1048582, 6, 1507712, 1114118, 6, 1573245, 917510, 6, 1573246, 983046, 6, 1573247, 1048582, 6, 1573248, 1114118, 6, 1638781, 917510, 6, 1638782, 983046, 6, 1638783, 1048582, 6, 1638784, 1114118, 6, 1704317, 917510, 6, 1704318, 983046, 6, 1704319, 1048582, 6, 1704320, 1114118, 6, 1769853, 917510, 6, 1769854, 983046, 6, 1769855, 1048582, 6, 1769856, 1114118, 6, 1835389, 917510, 6, 1835390, 983046, 6, 1835391, 1048582, 6, 1835392, 1114118, 6, 1900925, 917510, 6, 1900926, 983046, 6, 1900927, 1048582, 6, 1900928, 1114118, 6, 1966461, 917510, 6, 1966462, 983046, 6, 1966463, 1048582, 6, 1966464, 1114118, 6, 1376641, 917510, 6, 1376642, 983046, 6, 1376643, 1048582, 6, 1376644, 1114118, 6, 1442177, 917510, 6, 1442178, 983046, 6, 1442179, 1048582, 6, 1442180, 1114118, 6, 1507713, 917510, 6, 1507714, 983046, 6, 1507715, 1048582, 6, 1507716, 1114118, 6, 1573249, 917510, 6, 1573250, 983046, 6, 1573251, 1048582, 6, 1573252, 1114118, 6, 1638785, 917510, 6, 1638786, 983046, 6, 1638787, 1048582, 6, 1638788, 1114118, 6, 1704321, 917510, 6, 1704322, 983046, 6, 1704323, 1048582, 6, 1704324, 1114118, 6, 1769857, 917510, 6, 1769858, 983046, 6, 1769859, 1048582, 6, 1769860, 1114118, 6, 1835393, 917510, 6, 1835394, 983046, 6, 1835395, 1048582, 6, 1835396, 1114118, 6, 1900929, 917510, 6, 1900930, 983046, 6, 1900931, 1048582, 6, 1900932, 1114118, 6, 1966465, 917510, 6, 1966466, 983046, 6, 1966467, 1048582, 6, 1966468, 1114118, 6, 1376645, 917510, 6, 1376646, 983046, 6, 1376647, 1048582, 6, 1376648, 1114118, 6, 1442181, 917510, 6, 1442182, 983046, 6, 1442183, 1048582, 6, 1442184, 1114118, 6, 1507717, 917510, 6, 1507718, 983046, 6, 1507719, 1048582, 6, 1507720, 1114118, 6, 1573253, 917510, 6, 1573254, 983046, 6, 1573255, 1048582, 6, 1573256, 1114118, 6, 1638789, 917510, 6, 1638790, 983046, 6, 1638791, 1048582, 6, 1638792, 1114118, 6, 1704325, 917510, 6, 1704326, 983046, 6, 1704327, 1048582, 6, 1704328, 1114118, 6, 1769861, 917510, 6, 1769862, 983046, 6, 1769863, 1048582, 6, 1769864, 1114118, 6, 1835397, 917510, 6, 1835398, 983046, 6, 1835399, 1048582, 6, 1835400, 1114118, 6, 1900933, 917510, 6, 1900934, 983046, 6, 1900935, 1048582, 6, 1900936, 1114118, 6, 1966469, 917510, 6, 1966470, 983046, 6, 1966471, 1048582, 6, 1966472, 1114118, 6, 1376649, 917510, 6, 1376650, 983046, 6, 1376651, 1048582, 6, 1376652, 1114118, 6, 1442185, 917510, 6, 1442186, 983046, 6, 1442187, 1048582, 6, 1442188, 1114118, 6, 1507721, 917510, 6, 1507722, 983046, 6, 1507723, 1048582, 6, 1507724, 1114118, 6, 1573257, 917510, 6, 1573258, 983046, 6, 1573259, 1048582, 6, 1573260, 1114118, 6, 1638793, 917510, 6, 1638794, 983046, 6, 1638795, 1048582, 6, 1638796, 1114118, 6, 1704329, 917510, 6, 1704330, 983046, 6, 1704331, 1048582, 6, 1704332, 1114118, 6, 1769865, 917510, 6, 1769866, 983046, 6, 1769867, 1048582, 6, 1769868, 1114118, 6, 1835401, 917510, 6, 1835402, 983046, 6, 1835403, 1048582, 6, 1835404, 1114118, 6, 1900937, 917510, 6, 1900938, 983046, 6, 1900939, 1048582, 6, 1900940, 1114118, 6, 1966473, 917510, 6, 1966474, 983046, 6, 1966475, 1048582, 6, 1966476, 1114118, 6, 1376653, 917510, 6, 1376654, 983046, 6, 1376655, 1048582, 6, 1376656, 1114118, 6, 1442189, 917510, 6, 1442190, 983046, 6, 1442191, 1048582, 6, 1442192, 1114118, 6, 1507725, 917510, 6, 1507726, 983046, 6, 1507727, 1048582, 6, 1507728, 1114118, 6, 1573261, 917510, 6, 1573262, 983046, 6, 1573263, 1048582, 6, 1573264, 1114118, 6, 1638797, 917510, 6, 1638798, 983046, 6, 1638799, 1048582, 6, 1638800, 1114118, 6, 1704333, 917510, 6, 1704334, 983046, 6, 1704335, 1048582, 6, 1704336, 1114118, 6, 1769869, 917510, 6, 1769870, 983046, 6, 1769871, 1048582, 6, 1769872, 1114118, 6, 1835405, 917510, 6, 1835406, 983046, 6, 1835407, 1048582, 6, 1835408, 1114118, 6, 1900941, 917510, 6, 1900942, 983046, 6, 1900943, 1048582, 6, 1900944, 1114118, 6, 1966477, 917510, 6, 1966478, 983046, 6, 1966479, 1048582, 6, 1966480, 1114118, 6, 1376657, 917510, 6, 1376658, 983046, 6, 1376659, 1048582, 6, 1376660, 1114118, 6, 1442193, 917510, 6, 1442194, 983046, 6, 1442195, 1048582, 6, 1442196, 1114118, 6, 1507729, 917510, 6, 1507730, 983046, 6, 1507731, 1048582, 6, 1507732, 1114118, 6, 1573265, 917510, 6, 1573266, 983046, 6, 1573267, 1048582, 6, 1573268, 1114118, 6, 1638801, 917510, 6, 1638802, 983046, 6, 1638803, 1048582, 6, 1638804, 1114118, 6, 1704337, 917510, 6, 1704338, 983046, 6, 1704339, 1048582, 6, 1704340, 1114118, 6, 1769873, 917510, 6, 1769874, 983046, 6, 1769875, 1048582, 6, 1769876, 1114118, 6, 1835409, 917510, 6, 1835410, 983046, 6, 1835411, 1048582, 6, 1835412, 1114118, 6, 1900945, 917510, 6, 1900946, 983046, 6, 1900947, 1048582, 6, 1900948, 1114118, 6, 1966481, 917510, 6, 1966482, 983046, 6, 1966483, 1048582, 6, 1966484, 1114118, 6, 1376661, 917510, 6, 1376662, 983046, 6, 1376663, 1048582, 6, 1376664, 1114118, 6, 1442197, 917510, 6, 1442198, 983046, 6, 1442199, 1048582, 6, 1442200, 1114118, 6, 1507733, 917510, 6, 1507734, 983046, 6, 1507735, 1048582, 6, 1507736, 1114118, 6, 1573269, 917510, 6, 1573270, 983046, 6, 1573271, 1048582, 6, 1573272, 1114118, 6, 1638805, 917510, 6, 1638806, 983046, 6, 1638807, 1048582, 6, 1638808, 1114118, 6, 1704341, 917510, 6, 1704342, 983046, 6, 1704343, 1048582, 6, 1704344, 1114118, 6, 1769877, 917510, 6, 1769878, 983046, 6, 1769879, 1048582, 6, 1769880, 1114118, 6, 1835413, 917510, 6, 1835414, 983046, 6, 1835415, 1048582, 6, 1835416, 1114118, 6, 1900949, 917510, 6, 1900950, 983046, 6, 1900951, 1048582, 6, 1900952, 1114118, 6, 1966485, 917510, 6, 1966486, 983046, 6, 1966487, 1048582, 6, 1966488, 1114118, 6, 1376665, 917510, 6, 1376666, 983046, 6, 1376667, 1048582, 6, 1376668, 1114118, 6, 1442201, 917510, 6, 1442202, 983046, 6, 1442203, 1048582, 6, 1442204, 1114118, 6, 1507737, 917510, 6, 1507738, 983046, 6, 1507739, 1048582, 6, 1507740, 1114118, 6, 1573273, 917510, 6, 1573274, 983046, 6, 1573275, 1048582, 6, 1573276, 1114118, 6, 1638809, 917510, 6, 1638810, 983046, 6, 1638811, 1048582, 6, 1638812, 1114118, 6, 1704345, 917510, 6, 1704346, 983046, 6, 1704347, 1048582, 6, 1704348, 1114118, 6, 1769881, 917510, 6, 1769882, 983046, 6, 1769883, 1048582, 6, 1769884, 1114118, 6, 1835417, 917510, 6, 1835418, 983046, 6, 1835419, 1048582, 6, 1835420, 1114118, 6, 1900953, 917510, 6, 1900954, 983046, 6, 1900955, 1048582, 6, 1900956, 1114118, 6, 1966489, 917510, 6, 1966490, 983046, 6, 1966491, 1048582, 6, 1966492, 1114118, 6, 1376669, 917510, 6, 1376670, 983046, 6, 1376671, 1048582, 6, 1376672, 1114118, 6, 1442205, 917510, 6, 1442206, 983046, 6, 1442207, 1048582, 6, 1442208, 1114118, 6, 1507741, 917510, 6, 1507742, 983046, 6, 1507743, 1048582, 6, 1507744, 1114118, 6, 1573277, 917510, 6, 1573278, 983046, 6, 1573279, 1048582, 6, 1573280, 1114118, 6, 1638813, 917510, 6, 1638814, 983046, 6, 1638815, 1048582, 6, 1638816, 1114118, 6, 1704349, 917510, 6, 1704350, 983046, 6, 1704351, 1048582, 6, 1704352, 1114118, 6, 1769885, 917510, 6, 1769886, 983046, 6, 1769887, 1048582, 6, 1769888, 1114118, 6, 1835421, 917510, 6, 1835422, 983046, 6, 1835423, 1048582, 6, 1835424, 1114118, 6, 1900957, 917510, 6, 1900958, 983046, 6, 1900959, 1048582, 6, 1900960, 1114118, 6, 1966493, 917510, 6, 1966494, 983046, 6, 1966495, 1048582, 6, 1966496, 1114118, 6, 1376673, 917510, 6, 1376674, 983046, 6, 1376675, 1048582, 6, 1376676, 1114118, 6, 1442209, 917510, 6, 1442210, 983046, 6, 1442211, 1048582, 6, 1442212, 1114118, 6, 1507745, 917510, 6, 1507746, 983046, 6, 1507747, 1048582, 6, 1507748, 1114118, 6, 1573281, 917510, 6, 1573282, 983046, 6, 1573283, 1048582, 6, 1573284, 1114118, 6, 1638817, 917510, 6, 1638818, 983046, 6, 1638819, 1048582, 6, 1638820, 1114118, 6, 1704353, 917510, 6, 1704354, 983046, 6, 1704355, 1048582, 6, 1704356, 1114118, 6, 1769889, 917510, 6, 1769890, 983046, 6, 1769891, 1048582, 6, 1769892, 1114118, 6, 1835425, 917510, 6, 1835426, 983046, 6, 1835427, 1048582, 6, 1835428, 1114118, 6, 1900961, 917510, 6, 1900962, 983046, 6, 1900963, 1048582, 6, 1900964, 1114118, 6, 1966497, 917510, 6, 1966498, 983046, 6, 1966499, 1048582, 6, 1966500, 1114118, 6, 1376677, 917510, 6, 1376678, 983046, 6, 1376679, 1048582, 6, 1376680, 1114118, 6, 1442213, 917510, 6, 1442214, 983046, 6, 1442215, 1048582, 6, 1442216, 1114118, 6, 1507749, 917510, 6, 1507750, 983046, 6, 1507751, 1048582, 6, 1507752, 1114118, 6, 1573285, 917510, 6, 1573286, 983046, 6, 1573287, 1048582, 6, 1573288, 1114118, 6, 1638821, 917510, 6, 1638822, 983046, 6, 1638823, 1048582, 6, 1638824, 1114118, 6, 1704357, 917510, 6, 1704358, 983046, 6, 1704359, 1048582, 6, 1704360, 1114118, 6, 1769893, 917510, 6, 1769894, 983046, 6, 1769895, 1048582, 6, 1769896, 1114118, 6, 1835429, 917510, 6, 1835430, 983046, 6, 1835431, 1048582, 6, 1835432, 1114118, 6, 1900965, 917510, 6, 1900966, 983046, 6, 1900967, 1048582, 6, 1900968, 1114118, 6, 1966501, 917510, 6, 1966502, 983046, 6, 1966503, 1048582, 6, 1966504, 1114118, 6, 1376681, 917510, 6, 1376682, 983046, 6, 1376683, 1048582, 6, 1376684, 1114118, 6, 1442217, 917510, 6, 1442218, 983046, 6, 1442219, 1048582, 6, 1442220, 1114118, 6, 1507753, 917510, 6, 1507754, 983046, 6, 1507755, 1048582, 6, 1507756, 1114118, 6, 1573289, 917510, 6, 1573290, 983046, 6, 1573291, 1048582, 6, 1573292, 1114118, 6, 1638825, 917510, 6, 1638826, 983046, 6, 1638827, 1048582, 6, 1638828, 1114118, 6, 1704361, 917510, 6, 1704362, 983046, 6, 1704363, 1048582, 6, 1704364, 1114118, 6, 1769897, 917510, 6, 1769898, 983046, 6, 1769899, 1048582, 6, 1769900, 1114118, 6, 1835433, 917510, 6, 1835434, 983046, 6, 1835435, 1048582, 6, 1835436, 1114118, 6, 1900969, 917510, 6, 1900970, 983046, 6, 1900971, 1048582, 6, 1900972, 1114118, 6, 1966505, 917510, 6, 1966506, 983046, 6, 1966507, 1048582, 6, 1966508, 1114118, 6, 1376685, 917510, 6, 1442221, 917510, 6, 1507757, 917510, 6, 1573293, 917510, 6, 1638829, 917510, 6, 1704365, 917510, 6, 1769901, 917510, 6, 1835437, 917510, 6, 1900973, 917510, 6, 1966509, 917510, 6, 1573307, 917510, 5, 1638843, 917510, 6, 1573308, 983046, 5, 1638844, 983046, 6, 1573309, 1048582, 5, 1638845, 1048582, 6, 1573310, 1114118, 5, 1638846, 1114118, 6, 1573311, 917510, 5, 1638847, 917510, 6, 1573312, 983046, 5, 1638848, 983046, 6, 1573313, 1048582, 5, 1638849, 1048582, 6, 1573314, 1114118, 5, 1638850, 1114118, 6, 1573315, 917510, 5, 1638851, 917510, 6, 1573316, 983046, 5, 1638852, 983046, 6, 1573317, 1048582, 5, 1638853, 1048582, 6, 1573318, 1114118, 5, 1638854, 1114118, 6, 1573319, 917510, 5, 1638855, 917510, 6, 1573320, 983046, 5, 1638856, 983046, 6, 1573321, 1048582, 5, 1638857, 1048582, 6, 1573322, 1114118, 5, 1638858, 1114118, 6, 1573323, 917510, 5, 1638859, 917510, 6, 1573324, 983046, 5, 1638860, 983046, 6, 1573325, 1048582, 5, 1638861, 1048582, 6, 1573326, 1114118, 5, 1638862, 1114118, 6, 1573327, 917510, 5, 1638863, 917510, 6, 1573328, 983046, 5, 1638864, 983046, 6, 1573329, 1048582, 5, 1638865, 1048582, 6, 1573330, 1114118, 5, 1638866, 1114118, 6, 1573331, 917510, 5, 1638867, 917510, 6, 1573332, 983046, 5, 1638868, 983046, 6, 1573333, 1048582, 5, 1638869, 1048582, 6, 1573334, 1114118, 5, 1638870, 1114118, 6, 1573335, 917510, 5, 1638871, 917510, 6, 1573336, 983046, 5, 1638872, 983046, 6, 1573337, 1048582, 5, 1638873, 1048582, 6, 1573338, 1114118, 5, 1638874, 1114118, 6, 1573339, 917510, 5, 1638875, 917510, 6, 1704379, 917510, 6, 1704380, 983046, 6, 1704381, 1048582, 6, 1704382, 1114118, 6, 1769915, 917510, 6, 1769916, 983046, 6, 1769917, 1048582, 6, 1769918, 1114118, 6, 1835451, 917510, 6, 1835452, 983046, 6, 1835453, 1048582, 6, 1835454, 1114118, 6, 1900987, 917510, 6, 1900988, 983046, 6, 1900989, 1048582, 6, 1900990, 1114118, 6, 1966523, 917510, 6, 1966524, 983046, 6, 1966525, 1048582, 6, 1966526, 1114118, 6, 2032059, 917510, 6, 2032060, 983046, 6, 2032061, 1048582, 6, 2032062, 1114118, 6, 2097595, 917510, 6, 2097596, 983046, 6, 2097597, 1048582, 6, 2097598, 1114118, 6, 2163131, 917510, 6, 2163132, 983046, 6, 2163133, 1048582, 6, 2163134, 1114118, 6, 1704383, 917510, 6, 1704384, 983046, 6, 1704385, 1048582, 6, 1704386, 1114118, 6, 1769919, 917510, 6, 1769920, 983046, 6, 1769921, 1048582, 6, 1769922, 1114118, 6, 1835455, 917510, 6, 1835456, 983046, 6, 1835457, 1048582, 6, 1835458, 1114118, 6, 1900991, 917510, 6, 1900992, 983046, 6, 1900993, 1048582, 6, 1900994, 1114118, 6, 1966527, 917510, 6, 1966528, 983046, 6, 1966529, 1048582, 6, 1966530, 1114118, 6, 2032063, 917510, 6, 2032064, 983046, 6, 2032065, 1048582, 6, 2032066, 1114118, 6, 2097599, 917510, 6, 2097600, 983046, 6, 2097601, 1048582, 6, 2097602, 1114118, 6, 2163135, 917510, 6, 2163136, 983046, 6, 2163137, 1048582, 6, 2163138, 1114118, 6, 1704387, 917510, 6, 1704388, 983046, 6, 1704389, 1048582, 6, 1704390, 1114118, 6, 1769923, 917510, 6, 1769924, 983046, 6, 1769925, 1048582, 6, 1769926, 1114118, 6, 1835459, 917510, 6, 1835460, 983046, 6, 1835461, 1048582, 6, 1835462, 1114118, 6, 1900995, 917510, 6, 1900996, 983046, 6, 1900997, 1048582, 6, 1900998, 1114118, 6, 1966531, 917510, 6, 1966532, 983046, 6, 1966533, 1048582, 6, 1966534, 1114118, 6, 2032067, 917510, 6, 2032068, 983046, 6, 2032069, 1048582, 6, 2032070, 1114118, 6, 2097603, 917510, 6, 2097604, 983046, 6, 2097605, 1048582, 6, 2097606, 1114118, 6, 2163139, 917510, 6, 2163140, 983046, 6, 2163141, 1048582, 6, 2163142, 1114118, 6, 1704391, 917510, 6, 1704392, 983046, 6, 1704393, 1048582, 6, 1704394, 1114118, 6, 1769927, 917510, 6, 1769928, 983046, 6, 1769929, 1048582, 6, 1769930, 1114118, 6, 1835463, 917510, 6, 1835464, 983046, 6, 1835465, 1048582, 6, 1835466, 1114118, 6, 1900999, 917510, 6, 1901000, 983046, 6, 1901001, 1048582, 6, 1901002, 1114118, 6, 1966535, 917510, 6, 1966536, 983046, 6, 1966537, 1048582, 6, 1966538, 1114118, 6, 2032071, 917510, 6, 2032072, 983046, 6, 2032073, 1048582, 6, 2032074, 1114118, 6, 2097607, 917510, 6, 2097608, 983046, 6, 2097609, 1048582, 6, 2097610, 1114118, 6, 2163143, 917510, 6, 2163144, 983046, 6, 2163145, 1048582, 6, 2163146, 1114118, 6, 1704395, 917510, 6, 1704396, 983046, 6, 1704397, 1048582, 6, 1704398, 1114118, 6, 1769931, 917510, 6, 1769932, 983046, 6, 1769933, 1048582, 6, 1769934, 1114118, 6, 1835467, 917510, 6, 1835468, 983046, 6, 1835469, 1048582, 6, 1835470, 1114118, 6, 1901003, 917510, 6, 1901004, 983046, 6, 1901005, 1048582, 6, 1901006, 1114118, 6, 1966539, 917510, 6, 1966540, 983046, 6, 1966541, 1048582, 6, 1966542, 1114118, 6, 2032075, 917510, 6, 2032076, 983046, 6, 2032077, 1048582, 6, 2032078, 1114118, 6, 2097611, 917510, 6, 2097612, 983046, 6, 2097613, 1048582, 6, 2097614, 1114118, 6, 2163147, 917510, 6, 2163148, 983046, 6, 2163149, 1048582, 6, 2163150, 1114118, 6, 1704399, 917510, 6, 1704400, 983046, 6, 1704401, 1048582, 6, 1704402, 1114118, 6, 1769935, 917510, 6, 1769936, 983046, 6, 1769937, 1048582, 6, 1769938, 1114118, 6, 1835471, 917510, 6, 1835472, 983046, 6, 1835473, 1048582, 6, 1835474, 1114118, 6, 1901007, 917510, 6, 1901008, 983046, 6, 1901009, 1048582, 6, 1901010, 1114118, 6, 1966543, 917510, 6, 1966544, 983046, 6, 1966545, 1048582, 6, 1966546, 1114118, 6, 2032079, 917510, 6, 2032080, 983046, 6, 2032081, 1048582, 6, 2032082, 1114118, 6, 2097615, 917510, 6, 2097616, 983046, 6, 2097617, 1048582, 6, 2097618, 1114118, 6, 2163151, 917510, 6, 2163152, 983046, 6, 2163153, 1048582, 6, 2163154, 1114118, 6, 1704403, 917510, 6, 1704404, 983046, 6, 1704405, 1048582, 6, 1704406, 1114118, 6, 1769939, 917510, 6, 1769940, 983046, 6, 1769941, 1048582, 6, 1769942, 1114118, 6, 1835475, 917510, 6, 1835476, 983046, 6, 1835477, 1048582, 6, 1835478, 1114118, 6, 1901011, 917510, 6, 1901012, 983046, 6, 1901013, 1048582, 6, 1901014, 1114118, 6, 1966547, 917510, 6, 1966548, 983046, 6, 1966549, 1048582, 6, 1966550, 1114118, 6, 2032083, 917510, 6, 2032084, 983046, 6, 2032085, 1048582, 6, 2032086, 1114118, 6, 2097619, 917510, 6, 2097620, 983046, 6, 2097621, 1048582, 6, 2097622, 1114118, 6, 2163155, 917510, 6, 2163156, 983046, 6, 2163157, 1048582, 6, 2163158, 1114118, 6, 1704407, 917510, 6, 1704408, 983046, 6, 1704409, 1048582, 6, 1704410, 1114118, 6, 1769943, 917510, 6, 1769944, 983046, 6, 1769945, 1048582, 6, 1769946, 1114118, 6, 1835479, 917510, 6, 1835480, 983046, 6, 1835481, 1048582, 6, 1835482, 1114118, 6, 1901015, 917510, 6, 1901016, 983046, 6, 1901017, 1048582, 6, 1901018, 1114118, 6, 1966551, 917510, 6, 1966552, 983046, 6, 1966553, 1048582, 6, 1966554, 1114118, 6, 2032087, 917510, 6, 2032088, 983046, 6, 2032089, 1048582, 6, 2032090, 1114118, 6, 2097623, 917510, 6, 2097624, 983046, 6, 2097625, 1048582, 6, 2097626, 1114118, 6, 2163159, 917510, 6, 2163160, 983046, 6, 2163161, 1048582, 6, 2163162, 1114118, 6, 1704411, 917510, 6, 1769947, 917510, 6, 1835483, 917510, 6, 1901019, 917510, 6, 1966555, 917510, 6, 2032091, 917510, 6, 2097627, 917510, 6, 2163163, 917510, 6, 1507804, 917510, 5, 1573340, 917510, 6, 1507805, 983046, 5, 1573341, 983046, 6, 1507806, 1048582, 5, 1573342, 1048582, 6, 1507807, 1114118, 5, 1573343, 1114118, 6, 1507808, 917510, 5, 1573344, 917510, 6, 1638876, 917510, 6, 1638877, 983046, 6, 1638878, 1048582, 6, 1638879, 1114118, 6, 1704412, 917510, 6, 1704413, 983046, 6, 1704414, 1048582, 6, 1704415, 1114118, 6, 1769948, 917510, 6, 1769949, 983046, 6, 1769950, 1048582, 6, 1769951, 1114118, 6, 1835484, 917510, 6, 1835485, 983046, 6, 1835486, 1048582, 6, 1835487, 1114118, 6, 1901020, 917510, 6, 1901021, 983046, 6, 1901022, 1048582, 6, 1901023, 1114118, 6, 1966556, 917510, 6, 1966557, 983046, 6, 1966558, 1048582, 6, 1966559, 1114118, 6, 2032092, 917510, 6, 2032093, 983046, 6, 2032094, 1048582, 6, 2032095, 1114118, 6, 2097628, 917510, 6, 2097629, 983046, 6, 2097630, 1048582, 6, 2097631, 1114118, 6, 2163164, 917510, 6, 2163165, 983046, 6, 2163166, 1048582, 6, 2163167, 1114118, 6, 1638880, 917510, 6, 1704416, 917510, 6, 1769952, 917510, 6, 1835488, 917510, 6, 1901024, 917510, 6, 1966560, 917510, 6, 2032096, 917510, 6, 2097632, 917510, 6, 2163168, 917510, 6, 983465, 1048582, 5, 983466, 1114118, 5, 983467, 917510, 5, 983468, 983046, 5, 1049001, 1048582, 6, 1049002, 983046, 6, 1049003, 1048582, 6, 1049004, 1114118, 6, 1114537, 1048582, 6, 1114538, 983046, 6, 1114539, 1048582, 6, 1114540, 1114118, 6, 1180073, 1048582, 6, 1180074, 983046, 6, 1180075, 1048582, 6, 1180076, 1114118, 6, 983469, 1048582, 5, 1049005, 917510, 6, 1114541, 917510, 6, 1180077, 917510, 6, 983463, 917510, 5, 983464, 983046, 5, 1048999, 917510, 6, 1049000, 983046, 6, 1114535, 917510, 6, 1114536, 983046, 6, 1180071, 917510, 6, 1180072, 983046, 6, 786812, 917510, 5, 786813, 983046, 5, 786814, 1048582, 5, 786815, 1114118, 5, 786816, 917510, 5, 786817, 983046, 5, 786818, 1048582, 5, 852348, 917510, 6, 852349, 983046, 6, 852350, 1048582, 6, 852351, 1114118, 6, 852352, 917510, 6, 852353, 983046, 6, 852354, 1048582, 6, 328077, 917510, 5, 393613, 917510, 6, 459149, 917510, 6, 328078, 983046, 5, 393614, 983046, 6, 459150, 983046, 6, 328079, 1048582, 5, 393615, 1048582, 6, 459151, 1048582, 6, 328080, 1114118, 5, 393616, 1114118, 6, 459152, 1114118, 6, 328081, 917510, 5, 393617, 917510, 6, 459153, 917510, 6, 328082, 983046, 5, 393618, 983046, 6, 459154, 983046, 6, 328083, 1048582, 5, 393619, 1048582, 6, 459155, 1048582, 6, 524685, 917510, 6, 524686, 983046, 6, 524687, 1048582, 6, 524688, 1114118, 6, 524689, 917510, 6, 524690, 983046, 6, 524691, 1048582, 6, 1311196, 9, 0, 1376732, 9, 1, 1442268, 9, 0, 1311197, 65545, 0, 1376733, 65545, 1, 1442269, 65545, 0, 1442270, 9, 0, 1442271, 65545, 0, 1311198, 9, 0, 1376734, 9, 1, 1311199, 65545, 0, 1376735, 65545, 1, 1245662, 9, 1, 1245663, 65545, 1, 1180126, 9, 0, 1180127, 65545, 0, 1180124, 9, 0, 1245660, 9, 1, 1180125, 65545, 0, 1245661, 65545, 1, 1180128, 9, 0, 1245664, 9, 0, 1311200, 9, 1, 1180129, 65545, 0, 1245665, 65545, 0, 1311201, 65545, 1, 1376736, 9, 0, 1442272, 9, 1, 1376737, 65545, 0, 1442273, 65545, 1, 852444, 9, 1, 917980, 9, 1, 852445, 65545, 1, 917981, 65545, 1, 983516, 9, 0, 1049052, 9, 1, 983517, 65545, 0, 1049053, 65545, 1, 1114588, 9, 0, 1114589, 65545, 0, 852446, 9, 1, 917982, 9, 1, 852447, 65545, 1, 917983, 65545, 1, 983518, 9, 0, 1049054, 9, 1, 983519, 65545, 0, 1049055, 65545, 1, 1114590, 9, 0, 1114591, 65545, 0, 852448, 9, 1, 917984, 9, 1, 852449, 65545, 1, 917985, 65545, 1, 983520, 9, 0, 1049056, 9, 1, 983521, 65545, 0, 1049057, 65545, 1, 1114592, 9, 0, 1114593, 65545, 0, 852450, 9, 1, 917986, 9, 1, 852451, 65545, 1, 917987, 65545, 1, 983522, 9, 0, 1049058, 9, 1, 983523, 65545, 0, 1049059, 65545, 1, 1114594, 9, 0, 1180130, 9, 1, 1114595, 65545, 0, 1180131, 65545, 1, 1245666, 9, 0, 1311202, 9, 1, 1245667, 65545, 0, 1311203, 65545, 1, 1376738, 9, 0, 1442274, 9, 1, 1376739, 65545, 0, 1442275, 65545, 1, 852452, 9, 1, 917988, 9, 1, 852453, 65545, 1, 917989, 65545, 1, 983524, 9, 0, 1049060, 9, 1, 983525, 65545, 0, 1049061, 65545, 1, 1114596, 9, 0, 1180132, 9, 1, 1114597, 65545, 0, 1180133, 65545, 1, 1245668, 9, 0, 1311204, 9, 1, 1245669, 65545, 0, 1311205, 65545, 1, 1376740, 9, 0, 1442276, 9, 1, 1376741, 65545, 0, 1442277, 65545, 1, 524764, 9, 1, 590300, 9, 1, 524765, 65545, 1, 590301, 65545, 1, 655836, 9, 0, 721372, 9, 1, 655837, 65545, 0, 721373, 65545, 1, 786908, 9, 0, 786909, 65545, 0, 524766, 9, 1, 590302, 9, 1, 524767, 65545, 1, 590303, 65545, 1, 655838, 9, 0, 721374, 9, 1, 655839, 65545, 0, 721375, 65545, 1, 786910, 9, 0, 786911, 65545, 0, 524768, 9, 1, 590304, 9, 1, 524769, 65545, 1, 590305, 65545, 1, 655840, 9, 0, 721376, 9, 1, 655841, 65545, 0, 721377, 65545, 1, 786912, 9, 0, 786913, 65545, 0, 524770, 9, 1, 590306, 9, 1, 524771, 65545, 1, 590307, 65545, 1, 655842, 9, 0, 721378, 9, 1, 655843, 65545, 0, 721379, 65545, 1, 786914, 9, 0, 786915, 65545, 0, 524772, 9, 1, 590308, 9, 1, 524773, 65545, 1, 590309, 65545, 1, 655844, 9, 0, 721380, 9, 1, 655845, 65545, 0, 721381, 65545, 1, 786916, 9, 0, 786917, 65545, 0, 852437, 9, 0, 917973, 9, 1, 852438, 65545, 0, 917974, 65545, 1, 983509, 9, 0, 1049045, 9, 1, 983510, 65545, 0, 1049046, 65545, 1, 1114581, 9, 0, 1180117, 9, 1, 1114582, 65545, 0, 1180118, 65545, 1, 1245653, 9, 0, 1311189, 9, 1, 1245654, 65545, 0, 1311190, 65545, 1, 1376725, 9, 0, 1442261, 9, 1, 1376726, 65545, 0, 1442262, 65545, 1, 1507797, 9, 0, 1507798, 65545, 0, 852439, 9, 0, 917975, 9, 1, 852440, 65545, 0, 917976, 65545, 1, 983511, 9, 0, 1049047, 9, 1, 983512, 65545, 0, 1049048, 65545, 1, 1114583, 9, 0, 1180119, 9, 1, 1114584, 65545, 0, 1180120, 65545, 1, 1245655, 9, 0, 1311191, 9, 1, 1245656, 65545, 0, 1311192, 65545, 1, 1376727, 9, 0, 1442263, 9, 1, 1376728, 65545, 0, 1442264, 65545, 1, 1507799, 9, 0, 1507800, 65545, 0, 459225, 9, 0, 524761, 9, 1, 459226, 65545, 0, 524762, 65545, 1, 590297, 9, 0, 655833, 9, 1, 590298, 65545, 0, 655834, 65545, 1, 721369, 9, 0, 786905, 9, 1, 721370, 65545, 0, 786906, 65545, 1, 852441, 9, 0, 917977, 9, 1, 852442, 65545, 0, 917978, 65545, 1, 983513, 9, 0, 1049049, 9, 1, 983514, 65545, 0, 1049050, 65545, 1, 1114585, 9, 0, 1180121, 9, 1, 1114586, 65545, 0, 1180122, 65545, 1, 1245657, 9, 0, 1311193, 9, 1, 1245658, 65545, 0, 1311194, 65545, 1, 1376729, 9, 0, 1442265, 9, 1, 1376730, 65545, 0, 1442266, 65545, 1, 1507801, 9, 0, 1507802, 65545, 0, 459227, 9, 0, 524763, 9, 1, 590299, 9, 0, 655835, 9, 1, 721371, 9, 0, 786907, 9, 1, 852443, 9, 0, 917979, 9, 1, 983515, 9, 0, 1049051, 9, 1, 1114587, 9, 0, 1180123, 9, 1, 1245659, 9, 0, 1311195, 9, 1, 1376731, 9, 0, 1442267, 9, 1, 1507803, 9, 0, 852435, 9, 0, 917971, 9, 1, 852436, 65545, 0, 917972, 65545, 1, 983507, 9, 0, 1049043, 9, 1, 983508, 65545, 0, 1049044, 65545, 1, 1114579, 9, 0, 1180115, 9, 1, 1114580, 65545, 0, 1180116, 65545, 1, 1245651, 9, 0, 1311187, 9, 1, 1245652, 65545, 0, 1311188, 65545, 1, 1376723, 9, 0, 1442259, 9, 1, 1376724, 65545, 0, 1442260, 65545, 1, 1507795, 9, 0, 1507796, 65545, 0, 459228, 9, 0, 459229, 65545, 0, 459230, 9, 0, 459231, 65545, 0, 459232, 9, 0, 459233, 65545, 0, 459234, 9, 0, 459235, 65545, 0, 459236, 9, 0, 459237, 65545, 0, 1311181, 9, 0, 1376717, 9, 0, 1442253, 9, 1, 1507789, 9, 0, 1311182, 65545, 0, 1376718, 65545, 0, 1442254, 65545, 1, 1507790, 65545, 0, 1311183, 9, 0, 1376719, 393225, 0, 1442255, 393225, 1, 1507791, 9, 0, 1311184, 65545, 0, 1376720, 458761, 0, 1442256, 458761, 1, 1507792, 65545, 0, 1311185, 9, 0, 1376721, 9, 0, 1442257, 9, 1, 1507793, 9, 0, 1311186, 65545, 0, 1376722, 65545, 0, 1442258, 65545, 1, 1507794, 65545, 0)
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("1_chnog")]
+
+[node name="Statue" type="Sprite2D" parent="."]
+position = Vector2(1494.5, 283.125)
+scale = Vector2(1.76191, 1.84333)
+texture = ExtResource("11_chpbx")
+
+[node name="Statue2" type="Sprite2D" parent="."]
+position = Vector2(3751, 410)
+scale = Vector2(1.76191, 1.84333)
+texture = ExtResource("11_chpbx")
+
+[node name="Statue3" type="Sprite2D" parent="."]
+position = Vector2(6834, 171)
+scale = Vector2(1.76191, 1.84333)
+texture = ExtResource("11_chpbx")
+
+[node name="Statue4" type="Sprite2D" parent="."]
+position = Vector2(7525, 138)
+scale = Vector2(1.76191, 1.84333)
+texture = ExtResource("11_chpbx")
+
+[node name="Player" parent="." instance=ExtResource("6_x7bs1")]
+position = Vector2(57, 352)
+
+[node name="LevelTitle" parent="." instance=ExtResource("11_w3wh2")]
+level_name = "Level 2"
+
+[node name="Mobs" type="Node2D" parent="."]
+
+[node name="Skeleton" parent="Mobs" instance=ExtResource("7_gjyum")]
+position = Vector2(514, 467)
+
+[node name="Skeleton3" parent="Mobs" instance=ExtResource("7_gjyum")]
+position = Vector2(2855, 355)
+
+[node name="Skeleton6" parent="Mobs" instance=ExtResource("7_gjyum")]
+position = Vector2(4632, 387)
+
+[node name="Skeleton7" parent="Mobs" instance=ExtResource("7_gjyum")]
+position = Vector2(5508, 279)
+
+[node name="Skeleton8" parent="Mobs" instance=ExtResource("7_gjyum")]
+position = Vector2(6206, 276)
+
+[node name="Skeleton9" parent="Mobs" instance=ExtResource("7_gjyum")]
+position = Vector2(6191, 280)
+
+[node name="Skeleton2" parent="Mobs" instance=ExtResource("7_gjyum")]
+position = Vector2(1101, 426)
+
+[node name="Skeleton4" parent="Mobs" instance=ExtResource("7_gjyum")]
+position = Vector2(2013, 412)
+
+[node name="Skeleton5" parent="Mobs" instance=ExtResource("7_gjyum")]
+position = Vector2(7188, 350)
+
+[node name="Skeleton10" parent="Mobs" instance=ExtResource("7_gjyum")]
+position = Vector2(7177, 354)
+
+[node name="Stone-3" type="Sprite2D" parent="Mobs"]
+position = Vector2(484, 481)
+texture = ExtResource("11_rvhuj")
+
+[node name="Stone-4" type="Sprite2D" parent="Mobs"]
+position = Vector2(1072, 447)
+texture = ExtResource("11_rvhuj")
+
+[node name="Stone-5" type="Sprite2D" parent="Mobs"]
+position = Vector2(1980, 431)
+texture = ExtResource("11_rvhuj")
+
+[node name="Stone-6" type="Sprite2D" parent="Mobs"]
+position = Vector2(2828, 400)
+texture = ExtResource("11_rvhuj")
+
+[node name="Portal" parent="Mobs" instance=ExtResource("13_wrd5c")]
+position = Vector2(7462, 290)
+target_scene_path = "res://world_3.tscn"
+
+[node name="Stone-7" type="Sprite2D" parent="Mobs"]
+position = Vector2(7159, 368)
+texture = ExtResource("11_rvhuj")
+
+[node name="Stone-8" type="Sprite2D" parent="Mobs"]
+position = Vector2(4608, 400)
+texture = ExtResource("11_rvhuj")
+
+[node name="Stone-9" type="Sprite2D" parent="Mobs"]
+position = Vector2(5484, 287)
+texture = ExtResource("11_rvhuj")
+
+[node name="Stone-10" type="Sprite2D" parent="Mobs"]
+position = Vector2(6175, 289)
+texture = ExtResource("11_rvhuj")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HP" type="Label" parent="UI"]
+offset_left = 10.0
+offset_top = 15.0
+offset_right = 50.0
+offset_bottom = 38.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "HP
+"
+script = SubResource("GDScript_8fb83")
+
+[node name="Gem" type="Label" parent="UI"]
+offset_left = 13.0
+offset_top = 64.0
+offset_right = 53.0
+offset_bottom = 87.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Gem:"
+script = SubResource("GDScript_qcbn2")
+
+[node name="PausedUI" parent="UI" instance=ExtResource("14_eiw7x")]
+
+[node name="Wizards" type="Area2D" parent="."]
+
+[node name="Wizard" parent="Wizards" instance=ExtResource("10_ck5k4")]
+position = Vector2(1472, 319)
+
+[node name="Wizard2" parent="Wizards" instance=ExtResource("10_ck5k4")]
+position = Vector2(3724, 443)
+
+[node name="Wizard3" parent="Wizards" instance=ExtResource("10_ck5k4")]
+position = Vector2(6804, 168)
+
+[node name="Wizard4" parent="Wizards" instance=ExtResource("10_ck5k4")]
+position = Vector2(7491, 174)
+
+[node name="Collectables" type="Node2D" parent="."]
+
+[node name="Gem" parent="Collectables" instance=ExtResource("16_2qlpe")]
+position = Vector2(954, 304)
+
+[node name="Gem2" parent="Collectables" instance=ExtResource("16_2qlpe")]
+position = Vector2(1780, 234)
+
+[node name="Gem3" parent="Collectables" instance=ExtResource("16_2qlpe")]
+position = Vector2(2690, 256)
+
+[node name="Gem4" parent="Collectables" instance=ExtResource("16_2qlpe")]
+position = Vector2(3457, 180)
+
+[node name="Gem5" parent="Collectables" instance=ExtResource("16_2qlpe")]
+position = Vector2(4769, 286)
+
+[node name="Gem6" parent="Collectables" instance=ExtResource("16_2qlpe")]
+position = Vector2(7033, 143)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_1ykg5")
+volume_db = -5.0
+autoplay = true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://4jvsrw0flxby"
+path="res://.godot/imported/11 Stage Clear.mp3-8f39ad4c985f9b0794dbcd04ef938a4d.mp3str"
+
+[deps]
+
+source_file="res://Music/11 Stage Clear.mp3"
+dest_files=["res://.godot/imported/11 Stage Clear.mp3-8f39ad4c985f9b0794dbcd04ef938a4d.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
